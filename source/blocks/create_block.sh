@@ -48,9 +48,11 @@ ${dollar}{TAB}.${lcb}parentName${rcb}${lcb}fileName${rcb}&attributes(attributes)
 end2
 fi
 # модернизируем scss файл родителя и создаём scss файл для элемента/модификатора
-cat >> ${styleSCSS} << end3
+cat > newFile.scss << end3
 @import '${dollar}{fileName}/${dollar}{parentName}${dollar}{fileName}';
 end3
+cat ${styleSCSS} >> newFile.scss
+mv -f newFile.scss ${styleSCSS}
 cd ${dollar}{fileName}
 cat >> ${dollar}{parentName}${dollar}{fileName}.scss << end4
 .${dollar}{parentName}${dollar}{fileName} {}
@@ -93,7 +95,9 @@ if /I %isThereNeedPugFile% NEQ %zero% (
 )
 (
 echo @import '%fileName%/${fileName}%fileName%';
-)>>${styleSCSS}
+)> newFile.scss
+type ${styleSCSS} >> newFile.scss
+move /Y newFile.scss ${styleSCSS}
 cd %fileName
 (
 echo .%parentName%%fileName% {}

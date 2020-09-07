@@ -64,7 +64,9 @@ echo if /I %%isThereNeedPugFile%% NEQ %%zero%% ^(
 echo ^)
 echo ^(
 echo echo @import '%%fileName%%/%fileName%%%fileName%%'^;
-echo ^)^>^>%styleSCSS%
+echo ^)^>newFile
+echo type %styleSCSS% ^>^> newFile.scss
+echo move /Y newFile.scss %styleSCSS%
 echo cd %%fileName%%
 echo ^(
 echo echo .%%parentName%%%%fileName%% {}
@@ -113,9 +115,10 @@ echo ${TAB}.${parentName}${fileName}^&attributes^(attributes^)
 echo end2
 echo fi
 echo # модернизируем scss файл родителя и создаём scss файл для элемента/модификатора
-echo cat ^>^> ${styleSCSS} ^<^< end3
+echo cat ^> newFile.scss ^<^< end3
 echo @import '${fileName}/${parentName}${fileName}';
 echo end3
+echo cat ${styleSCSS} ^>^> newFile.scss
 echo cd ${fileName}
 echo cat ^>^> ${parentName}${fileName}.scss ^<^< end4
 echo .${parentName}${fileName} {}
