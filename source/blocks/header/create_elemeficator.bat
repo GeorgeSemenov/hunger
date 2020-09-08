@@ -1,5 +1,4 @@
-@echo off
-set parentName=block
+set parentName=header
 set /p fileName=What would you create?
 mkdir %fileName%
 rem Создаём пятёрку балванок, первая будет указывать был ли в цепи блок элемент модификатор создан элемент, а вторая будет содержать символ с которым будут сравнивать,
@@ -15,46 +14,46 @@ rem если второй символ fileName является нижним п
 rem Похоже если я создаю условие внутри условия то оно начинает работать некорректно, точнее незапуститься, поэтому приходиться разбивать условия
 set isThereNeedPugFile=0
 if /I %secondSymbol% == %ans% (
-set isThereElement=true
-set /p isThereNeedPugFile=Do you need a pug file one or zero
+  set isThereElement=true
+  set /p isThereNeedPugFile=Do you need a pug file one or zero
 )
 rem если нужен pug file то условный оператор всё обработает
 rem NEQ - значит неравное, просто тут нет оператора != поэтому приходится использовать это
 if /I %isThereNeedPugFile% NEQ %zero% (
-rem подключаем инклуды в начало pug файла у нашего блока, для этого создаём новый файл в него записываем инклуд, затем добавляем содержимое нашего PUG файла и затем копируем содержимое нового файла в PUG с замещением а новый файл удаляем к чертям собачьим
-(
-echo include %filename%/block%filename%.pug
-)> newFile.pug
-type block.pug >> newFile.pug
-move /Y newFile.pug  block.pug
-(
-echo mixin %parentName%%fileName%^(modifier^)
-echo   .%parentName%%fileName%^&attributes^(attributes^)
-)>%fileName%/%parentName%%fileName%.pug
+  rem подключаем инклуды в начало pug файла у нашего блока, для этого создаём новый файл в него записываем инклуд, затем добавляем содержимое нашего PUG файла и затем копируем содержимое нового файла в PUG с замещением а новый файл удаляем к чертям собачьим
+  (
+  echo include %filename%/header%filename%.pug
+  )> newFile.pug
+  type header.pug >> newFile.pug
+  move /Y newFile.pug  header.pug
+  (
+  echo mixin %parentName%%fileName%^(modifier^)
+  echo   .%parentName%%fileName%^&attributes^(attributes^)
+  )>%fileName%/%parentName%%fileName%.pug
 )
 (
-echo @import '%fileName%/block%fileName%';
-)>newFile
-type block.scss >> newFile.scss
-move /Y newFile.scss block.scss
-cd %fileName%
+echo @import '%fileName%/header%fileName%';
+)> newFile.scss
+type header.scss >> newFile.scss
+move /Y newFile.scss header.scss
+cd %fileName
 (
 echo .%parentName%%fileName% {}
 )>%parentName%%fileName%.scss
 if  /I %isThereElement% == %True% (
-(
-echo @echo off
-echo set grandParentName=block
-echo set parentName=%fileName%
-echo set /p fileName=What would you create?
-echo set newStyleSCSS=block%fileName%.scss
-echo mkdir %%fileName%%
-echo ^(
-echo echo @import '%%fileName%%/block%fileName%%%fileName%%';
-echo ^)^>^>%%newStyleSCSS%%
-echo cd %%fileName%%
-echo ^(
-echo echo .%%grandParentName%%%%parentName%%%%fileName%% {}
-echo ^)^>%%grandParentName%%%%parentName%%%%fileName%%.scss
-)>>create_modificator.bat
+  (
+  echo @echo off
+  echo set grandParentName=header
+  echo set parentName=%fileName%
+  echo set /p fileName=What would you create?
+  echo set newStyleSCSS=header%fileName%.scss
+  echo mkdir %%fileName%%
+  echo ^(
+  echo echo @import '%%fileName%%/header%fileName%%%fileName%%';
+  echo ^)^>^>%%newStyleSCSS%%
+  echo cd %%fileName%%
+  echo ^(
+  echo echo .%%grandParentName%%%%parentName%%%%fileName%% {}
+  echo ^)^>%%grandParentName%%%%parentName%%%%fileName%%.scss
+  )>>create_modificator.bat
 )
