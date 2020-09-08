@@ -64,7 +64,7 @@ echo if /I %%isThereNeedPugFile%% NEQ %%zero%% ^(
 echo ^)
 echo ^(
 echo echo @import '%%fileName%%/%fileName%%%fileName%%'^;
-echo ^)^>newFile
+echo ^)^>newFile.scss
 echo type %styleSCSS% ^>^> newFile.scss
 echo move /Y newFile.scss %styleSCSS%
 echo cd %%fileName%%
