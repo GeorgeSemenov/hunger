@@ -1,1 +1,9 @@
-.header__text {}
+.header__text {
+  font-family: 'banny' ,times , serif;
+  text-transform: uppercase;
+}
+.header_big{
+  .header__text{
+    font-size: 96px;
+  }
+}
