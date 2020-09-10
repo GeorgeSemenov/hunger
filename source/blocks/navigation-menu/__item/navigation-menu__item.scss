@@ -1,1 +1,8 @@
-.navigation-menu__item {}
+.navigation-menu__item {
+  font-family: 'open-sans' ,Georgia , serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: $navigationMenu__item--color;
+  text-transform: uppercase;
+}

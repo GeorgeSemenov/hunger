@@ -1,1 +1,9 @@
-.navigation-menu__side {}
+.navigation-menu__side {
+  border-bottom-color: $navigationMenu__side--borderColor;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
