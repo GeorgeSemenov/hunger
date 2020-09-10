@@ -33,6 +33,7 @@
     transform: translateY($transTop);
 }
 @mixin centered( $transLeft: -50% , $transTop: -50%, $top: 50%, $left: 50%){
+    position: absolute;
     top: $top;
     left: $left;
     transform: translate( $transLeft , $transTop);

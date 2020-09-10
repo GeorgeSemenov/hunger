@@ -1,5 +1,7 @@
 include ../../blocks/header/header.pug
 include ../../blocks/button/button.pug
+include ../../blocks/social/social.pug
+include ../../blocks/navigation-menu/navigation-menu.pug
 doctype html
 html(lang="ru")
   head
@@ -7,6 +9,10 @@ html(lang="ru")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title Hunger
   body
-    +button({
-			text:"explore"
-    })(class="button_transparent")
+    +navigation-menu({
+      items:[
+        "one",
+        "two",
+        "сри"      
+        ]
+    })()

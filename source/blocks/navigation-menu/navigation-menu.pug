@@ -1,0 +1,13 @@
+include __item/navigation-menu__item.pug
+include __logo/navigation-menu__logo.pug
+include __side/navigation-menu__side.pug
+mixin navigation-menu(modifier)
+  .navigation-menu&attributes(attributes)
+    - var lengthOfArray = modifier.items.length;
+    - var halfArray = Math.ceil(lengthOfArray/2);
+    - modifier._itemsForSide = modifier.items.slice(0, halfArray);
+    +navigation-menu__side(modifier)
+    +navigation-menu__logo(modifier)
+
+    - modifier._itemsForSide = modifier.items.slice(halfArray, lengthOfArray);
+    +navigation-menu__side(modifier)

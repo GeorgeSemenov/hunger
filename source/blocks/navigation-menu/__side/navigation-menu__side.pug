@@ -1,0 +1,4 @@
+mixin navigation-menu__side(modifier)
+  ul.navigation-menu__side&attributes(attributes)
+    each item in modifier._itemsForSide
+      +navigation-menu__item(item)

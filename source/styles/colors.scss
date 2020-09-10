@@ -4,6 +4,7 @@ $white: #fff;
 
 $orange: #E8C300;
 
+$gray-lightest: rgba(255, 255, 255, 0.2);
 $gray: rgba(255, 255, 255, 0.5);
 /* variables with sense */
 /* *********************************************************************** */
@@ -15,3 +16,5 @@ $button--BGColor: $orange;
 $button__text--color: $white;
 $button_transparent--BGColor: transparent;
 $button_transparent--borderColor: $gray;
+
+$social--borderColor: $gray-lightest;
