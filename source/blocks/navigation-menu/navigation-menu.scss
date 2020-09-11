@@ -1,7 +1,10 @@
+$side--width:530px;
+$gapBetweenSides--width:220px;
 @import '__item/navigation-menu__item';
 @import '__logo/navigation-menu__logo';
 @import '__side/navigation-menu__side';
 .navigation-menu {
   display: flex;
   justify-content: space-between;
+  width: $side--width*2 + $gapBetweenSides--width;
 }

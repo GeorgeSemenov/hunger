@@ -1,1 +1,4 @@
-.navigation-menu__logo {}
+.navigation-menu__logo {
+  @include square(150px);
+  cursor: pointer;
+}
