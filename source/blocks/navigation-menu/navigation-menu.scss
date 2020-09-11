@@ -6,5 +6,14 @@ $gapBetweenSides--width:220px;
 .navigation-menu {
   display: flex;
   justify-content: space-between;
-  width: $side--width*2 + $gapBetweenSides--width;
+
+  @media (min-width: $md) and (max-width: $xl) {
+    width: 100%;
+  }
+  @media (min-width: $xl) {
+    width: ($side--width*2 + $gapBetweenSides--width)*0.8;
+  }
+  @media (min-width: 1440px) {
+    width: ($side--width*2 + $gapBetweenSides--width);
+  }
 }
