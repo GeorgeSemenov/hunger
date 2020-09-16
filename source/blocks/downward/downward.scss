@@ -3,6 +3,7 @@
   border-radius: 100%;
   background-color: $downward--BGColor;
   position: relative;
+  cursor: pointer;
 
   &:after{
     @include centered();
