@@ -75,6 +75,14 @@
     }
 }
 
+@mixin buttonBehave($bgColor:red, $color: grey){
+  &:hover{opacity: 0.75;}
+  &:active{
+    background-color: darken($bgColor,10%);
+    color: darken($color,30%);
+  }
+}
+
 
 /* --------------------------------------------- */
 

@@ -4,12 +4,13 @@
   @include unselectable;
   @include px(15px);
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   text-align: center;
   cursor: pointer;
   background-color: $button--BGColor;
   min-width: 200px;
   border-radius: 5px;
+  color: $button--color;
 
   &:hover{
     opacity: 0.75;
@@ -24,7 +25,7 @@
     border-style: solid;
     background-color: $button_transparent--BGColor;
     border-color: $button_transparent--borderColor;
-
+    @include buttonBehave ($button_transparent--BGColor,$button--color);
     padding-top: 19px;
     padding-bottom: 23px;
   }

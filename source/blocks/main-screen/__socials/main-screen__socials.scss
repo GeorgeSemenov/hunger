@@ -1,1 +1,14 @@
-.main-screen__socials {}
+.main-screen__socials {
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: $lg){
+    @include centeredY($top:56%)
+    right: 77px;
+    height: 245px;
+    flex-direction: column;
+    position: absolute;
+  }
+
+
+}

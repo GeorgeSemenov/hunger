@@ -1,3 +1,4 @@
+@import '__button/main-screen__button';
 @import '__socials/main-screen__socials';
 @import '__downward/main-screen__downward';
 @import '__buttons/main-screen__buttons';
@@ -6,4 +7,7 @@
 .main-screen {
   min-height: 100vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/main-screenBG.png");
+  @media (min-width: $xl) {
+    padding-top: 326px;
+  }
 }

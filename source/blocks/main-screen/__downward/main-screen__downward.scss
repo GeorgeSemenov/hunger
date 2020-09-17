@@ -1,1 +1,7 @@
-.main-screen__downward {}
+.main-screen__downward {
+  @include mx(auto);
+
+  @media (min-width: $xl){
+    margin-top: 92px;
+  }
+}
