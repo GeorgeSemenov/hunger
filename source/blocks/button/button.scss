@@ -25,7 +25,7 @@
     border-style: solid;
     background-color: $button_transparent--BGColor;
     border-color: $button_transparent--borderColor;
-    @include buttonBehave ($button_transparent--BGColor,$button--color);
+    @include buttonFullBehave ($button_transparent--BGColor,$button--color);
     padding-top: 19px;
     padding-bottom: 23px;
   }

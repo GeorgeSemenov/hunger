@@ -3,11 +3,17 @@
 @import '_facebook/social_facebook';
 .social {
   @include square(60px);
+  @include buttonBehave(transparent);
+  cursor: pointer;
   border-radius: 100%;
   border-style: solid;
   border-color: $social--borderColor;
   border-width: 1px;
   position: relative;
+
+  &:active{
+    background-color:$social-active--BGColor;
+  }
 
   &:before{
     @include centered;
