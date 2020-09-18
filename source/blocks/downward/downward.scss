@@ -1,9 +1,11 @@
 .downward {
   @include square(40px);
+  @include buttonFullBehave($downward--BGColor,$downward-after--color)
   border-radius: 100%;
   background-color: $downward--BGColor;
   position: relative;
   cursor: pointer;
+
 
   &:after{
     @include centered();

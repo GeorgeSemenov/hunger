@@ -1,6 +1,10 @@
 .main-screen__downward {
   @include mx(auto);
 
+  @media (min-width: $lg) {
+    margin-top: 40px;
+  }
+
   @media (min-width: $xl){
     margin-top: 92px;
   }

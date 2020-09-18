@@ -4,10 +4,13 @@
 
   @media (min-width: $lg){
     @include centeredY($top:56%)
-    right: 77px;
+    right: 15px;
     height: 245px;
     flex-direction: column;
     position: absolute;
+  }
+  @media (min-width: $xl) {
+    right:77px;
   }
 
 
