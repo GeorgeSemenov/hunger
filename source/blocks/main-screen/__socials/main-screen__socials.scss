@@ -1,9 +1,13 @@
 .main-screen__socials {
   display: flex;
-  justify-content: space-around;
 
+  @media (max-width: $lg - 1px) {
+    justify-content: center;
+    margin-top: 15px;
+  }
   @media (min-width: $lg){
     @include centeredY($top:56%)
+    justify-content: space-around;
     right: 15px;
     height: 245px;
     flex-direction: column;

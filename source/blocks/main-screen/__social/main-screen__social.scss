@@ -1,0 +1,5 @@
+.main-screen__social {
+  &:nth-child(2){
+    @include mx(15px);
+  }
+}

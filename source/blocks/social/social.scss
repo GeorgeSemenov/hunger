@@ -11,6 +11,10 @@
   border-width: 1px;
   position: relative;
 
+  @media (max-width: $md - 1px) {
+    @include square(45px);
+  }
+
   &:active{
     background-color:$social-active--BGColor;
   }

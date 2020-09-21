@@ -4,6 +4,7 @@ $gapBetweenSides--width:220px;
 @import '__logo/navigation-menu__logo';
 @import '__side/navigation-menu__side';
 .navigation-menu {
+  position: fixed;
   display: flex;
   justify-content: space-between;
 

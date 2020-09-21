@@ -1,3 +1,4 @@
+include __main-content/main-screen__main-content.pug
 include __socials/main-screen__socials.pug
 include __buttons/main-screen__buttons.pug
 include __content/main-screen__content.pug
@@ -7,13 +8,5 @@ include ../downward/downward.pug
 include ../social/social.pug
 mixin main-screen(modifier)
   .main-screen&attributes(attributes)
-    +header({
-      caption:"restaurant",
-      text: "hungry people"
-    })(class="main-screen__header header_big header_color_white")
-    +main-screen__buttons({
-      button1Text: "book table",
-      button2Text: "explore"
-    })
-    +main-screen__socials(modifier)
+    +main-screen__main-content(modifier)
     +downward(modifier)(class="main-screen__downward")
