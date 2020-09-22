@@ -1,12 +1,26 @@
 .navigation-menu__side {
-  border-bottom-color: $navigationMenu__side--borderColor;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-
   display: flex;
-  justify-content: space-around;
-  height: 54px;
-  width: $side--width;
-  position: relative;
-  top: 18px;
+
+  @media (max-width: $md - 1px){
+    max-height: 0;
+
+    &:nth-child(1){
+      order:2;
+    }
+    &:nth-child(3){
+      order:3;
+    }
+  }
+
+  @media (min-width: $md){
+    flex-grow: 1;
+    justify-content: space-around;
+    height: 54px;
+    position: relative;
+    top: 18px;
+
+  }
+  @media (min-width: $xxl){
+    width: $side--width;
+  }
 }

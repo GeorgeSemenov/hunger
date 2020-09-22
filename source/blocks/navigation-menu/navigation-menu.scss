@@ -1,3 +1,4 @@
+@import '__item-text/navigation-menu__item-text';
 $side--width:530px;
 $gapBetweenSides--width:220px;
 @import '__item/navigation-menu__item';
@@ -7,14 +8,21 @@ $gapBetweenSides--width:220px;
   position: fixed;
   display: flex;
   justify-content: space-between;
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+  }
 
-  @media (min-width: $md) and (max-width: $xl) {
+  @media (max-width: $xl - 1px) {
     width: 100%;
+  }
+  @media (min-width: $md){
+    top: 25px;
   }
   @media (min-width: $xl) {
     width: ($side--width*2 + $gapBetweenSides--width)*0.8;
+    left: 80px
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $xxl) {
     width: ($side--width*2 + $gapBetweenSides--width);
   }
 }

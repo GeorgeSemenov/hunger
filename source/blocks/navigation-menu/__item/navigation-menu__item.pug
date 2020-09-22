@@ -1,2 +1,3 @@
 mixin navigation-menu__item(modifier)
-  span.navigation-menu__item&attributes(attributes)!= modifier
+  li.navigation-menu__item&attributes(attributes)
+    +navigation-menu__item-text(modifier)

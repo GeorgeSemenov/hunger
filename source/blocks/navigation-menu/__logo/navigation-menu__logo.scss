@@ -1,4 +1,9 @@
 .navigation-menu__logo {
   @include square(150px);
   cursor: pointer;
+
+  @media (max-width: $md - 1px){
+    @include square(70px);
+    order:1;
+  }
 }
