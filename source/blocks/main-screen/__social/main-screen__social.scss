@@ -1,7 +1,0 @@
-.main-screen__social {
-  &:nth-child(2){
-    @media (max-width: $lg - 1px){
-      @include mx(15px);
-    }
-  }
-}

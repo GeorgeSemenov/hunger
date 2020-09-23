@@ -1,7 +1,9 @@
+include __socials/navigation-menu__socials.pug
 include __item-text/navigation-menu__item-text.pug
 include __item/navigation-menu__item.pug
 include __logo/navigation-menu__logo.pug
 include __side/navigation-menu__side.pug
+include ../social/social.pug
 mixin navigation-menu(modifier)
   .navigation-menu&attributes(attributes)
     if modifier.items == undefined
@@ -14,3 +16,4 @@ mixin navigation-menu(modifier)
 
     - modifier._itemsForSide = modifier.items.slice(halfArray, lengthOfArray);
     +navigation-menu__side(modifier)
+    +navigation-menu__socials(modifier)
