@@ -1,3 +1,4 @@
+@import '_with-lines/header_with-lines';
 @import '_color_white/header_color_white';
 @import '_big/header_big';
 @import '__caption/header__caption';
@@ -16,5 +17,14 @@
 
   &.header_color_white{
     color: $header__text_color_white--color;
+  }
+
+  &.header_with_lines{
+     &:before{
+      content: '';
+      height: calc(100vh - 100px);
+      width: 10px;
+      background-color: red;
+    }
   }
 }
