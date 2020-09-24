@@ -1,1 +1,6 @@
-.main-screen__main-content {}
+.main-screen__main-content {
+  @media (min-width: $xxl - 1px){
+    position: relative;
+    top: 50px;
+  }
+}

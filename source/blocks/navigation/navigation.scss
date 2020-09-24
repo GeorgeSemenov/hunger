@@ -1,11 +1,11 @@
-@import '__socials/navigation-menu__socials';
-@import '__item-text/navigation-menu__item-text';
 $side--width:530px;
 $gapBetweenSides--width:220px;
-@import '__item/navigation-menu__item';
-@import '__logo/navigation-menu__logo';
-@import '__side/navigation-menu__side';
-.navigation-menu {
+@import '__menu/navigation__menu';
+@import '__socials/navigation__socials';
+@import '__item-text/navigation__item-text';
+@import '__item/navigation__item';
+@import '__logo/navigation__logo';
+.navigation {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,20 @@ $gapBetweenSides--width:220px;
   }
   @media (min-width: $md){
     top: 25px;
+    &:after, &:before{
+      position: absolute;
+      content: '';
+      width: 40%;
+      height: 1px;
+      bottom: 0;
+      background-color: $navigation-before-after--BGColor;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0px;
+    }
   }
   @media (min-width: $xl) {
     width: ($side--width*2 + $gapBetweenSides--width)*0.8;

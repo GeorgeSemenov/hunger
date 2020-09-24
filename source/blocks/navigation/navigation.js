@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".navigation-menu__logo")
+  $(".navigation__logo")
   .click(function(){
 
   })

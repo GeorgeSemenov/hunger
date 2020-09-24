@@ -5,15 +5,15 @@
 @import '__header/main-screen__header';
 @import '__content/main-screen__content';
 .main-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/main-screenBG.png");
-  box-sizing: border-box;
+  background-image: linear-gradient($main-screen--BGImageGradient), url("../../img/main-screenBG-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: $xxl - 1px){
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media (min-width: $lg){
+    background-image: linear-gradient($main-screen--BGImageGradient), url("../../img/main-screenBG.png");
   }
 }

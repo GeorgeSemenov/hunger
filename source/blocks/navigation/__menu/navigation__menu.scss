@@ -1,4 +1,4 @@
-.navigation-menu__side {
+.navigation__menu {
   display: flex;
 
   @media (max-width: $md - 1px){
@@ -19,8 +19,5 @@
     position: relative;
     top: 18px;
 
-  }
-  @media (min-width: $xxl){
-    width: $side--width;
   }
 }

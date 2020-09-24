@@ -18,13 +18,4 @@
   &.header_color_white{
     color: $header__text_color_white--color;
   }
-
-  &.header_with_lines{
-     &:before{
-      content: '';
-      height: calc(100vh - 100px);
-      width: 10px;
-      background-color: red;
-    }
-  }
 }

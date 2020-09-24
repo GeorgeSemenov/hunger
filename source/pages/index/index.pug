@@ -1,7 +1,7 @@
 include ../../blocks/header/header.pug
 include ../../blocks/button/button.pug
 include ../../blocks/social/social.pug
-include ../../blocks/navigation-menu/navigation-menu.pug
+include ../../blocks/navigation/navigation.pug
 include ../../blocks/downward/downward.pug
 include ../../blocks/main-screen/main-screen.pug
 doctype html
@@ -11,7 +11,7 @@ html(lang="ru")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title Hunger
   body
-    +navigation-menu({
+    +navigation({
       items:['home','about','team','booking','menu','galerie','events','contact']
     })
     +main-screen()

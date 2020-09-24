@@ -1,0 +1,14 @@
+include __menu/navigation__menu.pug
+include __socials/navigation__socials.pug
+include __item-text/navigation__item-text.pug
+include __item/navigation__item.pug
+include __logo/navigation__logo.pug
+include ../social/social.pug
+mixin navigation(modifier)
+  .navigation&attributes(attributes)
+    if modifier.items == undefined
+        - modifier.items = ['someValue','another','value'];
+
+    +navigation__menu(modifier)
+    +navigation__logo(modifier)
+    +navigation__socials(modifier)

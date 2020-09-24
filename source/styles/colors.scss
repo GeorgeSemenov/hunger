@@ -8,11 +8,14 @@ $black: #333333;
 
 $gray-lightest: rgba(255, 255, 255, 0.2);
 $gray: rgba(255, 255, 255, 0.5);
+
+$shadow-gradient: (0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 /* variables with sense */
 /* *********************************************************************** */
 
-$header__text_color_white--color: $white;
 $header-after--BGColor: $orange;
+$header__text_color_white--color: $white;
+$header__text-before-after--BGColor: $gray-lightest;
 
 $button--BGColor: $orange;
 $button--color: $white;
@@ -22,8 +25,11 @@ $button_transparent--borderColor: $gray;
 $social--borderColor: $gray-lightest;
 $social-active--BGColor: $black;
 
-$navigationMenu__item--color: $white;
-$navigationMenu__side--borderColor: $gray-lightest;
+$navigation__item--color: $white;
+$navigation-before-after--BGColor: $gray-lightest;
+
 
 $downward--BGColor: $white;
 $downward-after--color: $black;
+
+$main-screen--BGImageGradient: $shadow-gradient;

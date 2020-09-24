@@ -16,3 +16,16 @@
     }
   }
 }
+
+.header_with-lines{
+  .header__text{
+    &:before, &:after{
+      @include centeredY();
+      position: absolute;
+      content: '';
+      height: calc(100vh - 100px);
+      width: 1px;
+      background-color: $header__text-before-after--BGColor;
+    }
+  }
+}
