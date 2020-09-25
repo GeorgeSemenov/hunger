@@ -1,9 +1,10 @@
-@import '__main-content/main-screen__main-content';
+@import '__downward-container/main-screen__downward-container';
 @import '__button/main-screen__button';
 @import '__downward/main-screen__downward';
 @import '__buttons/main-screen__buttons';
 @import '__header/main-screen__header';
 @import '__content/main-screen__content';
+$main-screen--vertical-lines-margin: 20.4vw;
 .main-screen {
   display: flex;
   align-items: center;
@@ -12,6 +13,17 @@
   background-image: linear-gradient($main-screen--BGImageGradient), url("../../img/main-screenBG-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
+
+  &:before, &:after{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: calc(100vh - 100px);
+    width: 1px;
+    background-color: $main-screen-before-after--BGColor;
+  }
+  &:before{left: $main-screen--vertical-lines-margin;}
+  &:after{right: $main-screen--vertical-lines-margin;}
 
   @media (min-width: $lg){
     background-image: linear-gradient($main-screen--BGImageGradient), url("../../img/main-screenBG.png");

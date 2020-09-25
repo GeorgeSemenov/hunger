@@ -15,7 +15,6 @@ $shadow-gradient: (0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 
 $header-after--BGColor: $orange;
 $header__text_color_white--color: $white;
-$header__text-before-after--BGColor: $gray-lightest;
 
 $button--BGColor: $orange;
 $button--color: $white;
@@ -33,3 +32,5 @@ $downward--BGColor: $white;
 $downward-after--color: $black;
 
 $main-screen--BGImageGradient: $shadow-gradient;
+$main-screen-before-after--BGColor: $gray-lightest;
+$main-screen__downward-container-before-after--BGColor: $gray-lightest;

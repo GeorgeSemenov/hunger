@@ -1,9 +1,3 @@
 .main-screen__downward {
-  @include centeredX();
-  position: absolute;
-  bottom: 11.5%;
-
-  @media (max-width: $xl - 1px) {
-    bottom: 5%;
-  }
+  /*Тут могу находиться дополнительные свойства для downward*/
 }

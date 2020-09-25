@@ -1,4 +1,4 @@
-include __main-content/main-screen__main-content.pug
+include __downward-container/main-screen__downward-container.pug
 include __buttons/main-screen__buttons.pug
 include __content/main-screen__content.pug
 include ../header/header.pug
@@ -6,5 +6,5 @@ include ../button/button.pug
 include ../downward/downward.pug
 mixin main-screen(modifier)
   .main-screen&attributes(attributes)
-    +main-screen__main-content(modifier)
-    +downward(modifier)(class="main-screen__downward")
+    +main-screen__content(modifier)
+    +main-screen__downward-container(modifier)

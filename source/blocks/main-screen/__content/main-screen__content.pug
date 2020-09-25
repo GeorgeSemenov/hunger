@@ -1,2 +1,10 @@
 mixin main-screen__content(modifier)
   .main-screen__content&attributes(attributes)
+    +header({
+        caption:"restaurant",
+        text: "hungry people"
+      })(class="main-screen__header header_big header_color_white header_big header_with-lines")
+    +main-screen__buttons({
+        button1Text: "book table",
+        button2Text: "explore"
+      })
