@@ -1,3 +1,7 @@
+include __sandwich-ico-container/navigation__sandwich-ico-container.pug
+include __sandwich-input/navigation__sandwich-input.pug
+include __sandwich-ico/navigation__sandwich-ico.pug
+include __content/navigation__content.pug
 include __menu/navigation__menu.pug
 include __socials/navigation__socials.pug
 include __item-text/navigation__item-text.pug
@@ -8,7 +12,6 @@ mixin navigation(modifier)
   .navigation&attributes(attributes)
     if modifier.items == undefined
         - modifier.items = ['someValue','another','value'];
-
-    +navigation__menu(modifier)
-    +navigation__logo(modifier)
-    +navigation__socials(modifier)
+    +navigation__sandwich-input(modifier)
+    +navigation__sandwich-ico-container(modifier)
+    +navigation__content(modifier)

@@ -1,20 +1,18 @@
 .navigation__menu {
   display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  position: relative;
 
   @media (max-width: $md - 1px){
+    top: 30px;
+    display: block;
     max-height: 0;
+    overflow: hidden;
 
-    &:nth-child(1){
-      order:2;
+    .navigation__sandwich-input:checked ~ .navigation__menu{
+      max-height: none;
     }
-    &:nth-child(3){
-      order:3;
-    }
-  }
 
-  @media (min-width: $md){
-    flex-grow: 1;
-    justify-content: space-around;
-    position: relative;
   }
 }
