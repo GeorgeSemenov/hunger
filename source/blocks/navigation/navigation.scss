@@ -6,6 +6,7 @@ $gapBetweenSides--width:220px;
 @import '__item/navigation__item';
 @import '__logo/navigation__logo';
 .navigation {
+  @include centeredX();
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -35,7 +36,6 @@ $gapBetweenSides--width:220px;
   }
   @media (min-width: $xl) {
     width: ($side--width*2 + $gapBetweenSides--width)*0.8;
-    left: 80px
   }
   @media (min-width: $xxl) {
     width: ($side--width*2 + $gapBetweenSides--width);

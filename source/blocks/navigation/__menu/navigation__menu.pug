@@ -2,7 +2,4 @@ mixin navigation__menu(modifier)
   - var i = 0;
   ul.navigation__menu&attributes(attributes)
     each item in modifier.items
-      //- if i == 4
-      //-   - item = '';
-      //- - i++;
       +navigation__item(item)

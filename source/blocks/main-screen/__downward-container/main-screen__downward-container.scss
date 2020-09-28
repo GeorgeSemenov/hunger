@@ -1,9 +1,12 @@
 .main-screen__downward-container {
-  @include square()
+  @include square(60px)
   @include centeredX();
   position: absolute;
-  bottom: 11.5vh;
-
+  bottom: 10.3vh;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $main-screen__downward-container--borderColor;
+  border-radius: 100%;
 
   &:before, &:after{
     @include centeredX();
@@ -19,6 +22,6 @@
   }
   &:after{
     bottom:$main-screen__downward--height;
-    top:-72vh;
+    top:-57vh;
   }
 }

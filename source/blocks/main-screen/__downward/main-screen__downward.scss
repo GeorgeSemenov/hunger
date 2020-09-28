@@ -1,3 +1,4 @@
 .main-screen__downward {
-  /*Тут могу находиться дополнительные свойства для downward*/
+  @include centered();
+
 }

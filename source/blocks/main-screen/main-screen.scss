@@ -11,6 +11,7 @@ $main-screen--vertical-lines-margin: 20.4vw;
   justify-content: center;
   min-height: 100vh;
   background-image: linear-gradient($main-screen--BGImageGradient), url("../../img/main-screenBG-mobile.png");
+  background-position: 0,0;
   background-size: cover;
   background-repeat: no-repeat;
 

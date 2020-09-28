@@ -21,6 +21,7 @@
 
   &:before{
     @include centered;
+    position: absolute;
   }
 
   &.social_facebook{
