@@ -5,10 +5,16 @@
   font-size: 1.2rem;
   color: $navigation__item--color;
   text-transform: uppercase;
-  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 43px;
+  width: 10%;
 
-  @media (min-width: $md) {
-    padding-top: 20px;
-    padding-bottom: 43px;
+  @media (max-width: $md - 1px) {
+    width: auto;
   }
+
+  &:nth-child(8n+4){
+    margin-right: 20%;
+  }
+
 }

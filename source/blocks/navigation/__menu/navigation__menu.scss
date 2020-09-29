@@ -1,8 +1,9 @@
 .navigation__menu {
+  width: 100%;
   display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
   position: relative;
+  flex-wrap: wrap;
+  text-align: center;
 
   @media (max-width: $md - 1px){
     top: 30px;

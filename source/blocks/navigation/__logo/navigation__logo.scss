@@ -1,7 +1,9 @@
 .navigation__logo {
   @include square(150px);
+  @include centeredX();
   cursor: pointer;
   position: absolute;
+
 
   @media (max-width: $md - 1px){
     @include square(70px);
