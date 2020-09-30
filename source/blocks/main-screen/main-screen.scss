@@ -4,7 +4,6 @@
 @import '__buttons/main-screen__buttons';
 @import '__header/main-screen__header';
 @import '__content/main-screen__content';
-$main-screen--vertical-lines-margin: 20.4vw;
 .main-screen {
   display: flex;
   align-items: center;
@@ -15,6 +14,7 @@ $main-screen--vertical-lines-margin: 20.4vw;
   background-size: cover;
   background-repeat: no-repeat;
 
+  $main-screen--vertical-lines-margin: 20.4vw;
   &:before, &:after{
     position: absolute;
     bottom: 0;
