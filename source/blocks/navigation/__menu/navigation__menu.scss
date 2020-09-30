@@ -1,9 +1,26 @@
 .navigation__menu {
-  width: 100%;
+  width: 1275px;
   display: flex;
   position: relative;
   flex-wrap: wrap;
   text-align: center;
+
+  @media (min-width: $md){
+    &:after, &:before{
+      position: absolute;
+      content: '';
+      width: 40%;
+      height: 1px;
+      bottom: 0;
+      background-color: $navigation-before-after--BGColor;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0px;
+    }
+  }
 
   @media (max-width: $md - 1px){
     top: 30px;

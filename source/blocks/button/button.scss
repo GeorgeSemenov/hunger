@@ -18,11 +18,11 @@
   }
 
   &:hover{
-    opacity: 0.75;
-  }
-
-  &:active{
     background-color: darken($button--BGColor,10%);
+  }
+  &:active{
+    background-color: darken($button--BGColor,20%);
+    color: darken($button--color,30%)
   }
 
   &.button_transparent{

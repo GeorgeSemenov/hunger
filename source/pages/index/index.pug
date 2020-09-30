@@ -4,6 +4,7 @@ include ../../blocks/social/social.pug
 include ../../blocks/navigation/navigation.pug
 include ../../blocks/downward/downward.pug
 include ../../blocks/main-screen/main-screen.pug
+include ../../blocks/navigation-and-main-screen/navigation-and-main-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -11,8 +12,5 @@ html(lang="ru")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title Hunger
   body
-    +navigation({
-      items:['home','about','team','booking','menu','galerie','events','contact']
-    })
-    +main-screen()
+    +navigation-and-main-screen()
     +main-screen()
