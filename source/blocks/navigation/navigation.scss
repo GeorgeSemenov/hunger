@@ -14,6 +14,8 @@ $gapBetweenSides--width:220px;
   position: fixed;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding-top: 25px;
   @media (max-width: $md - 1px){
     flex-direction: column;
   }
@@ -22,7 +24,6 @@ $gapBetweenSides--width:220px;
     width: 100%;
   }
   @media (min-width: $md){
-    top: 25px;
     &:after, &:before{
       position: absolute;
       content: '';
@@ -37,11 +38,5 @@ $gapBetweenSides--width:220px;
     &:after{
       right: 0px;
     }
-  }
-  @media (min-width: $xl) {
-    width: ($side--width*2 + $gapBetweenSides--width)*0.8;
-  }
-  @media (min-width: $xxl) {
-    width: ($side--width*2 + $gapBetweenSides--width);
   }
 }

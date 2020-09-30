@@ -14,7 +14,9 @@
   @media (max-width: $md - 1px) {
     @include square(45px);
   }
-
+  &:hover{
+    background-color: $social-hover--BGColor;
+  }
   &:active{
     background-color:$social-active--BGColor;
   }
