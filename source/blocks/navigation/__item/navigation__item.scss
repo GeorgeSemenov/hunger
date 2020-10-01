@@ -9,12 +9,17 @@
   padding-bottom: 43px;
   width: 10%;
 
-  @media (max-width: $md - 1px) {
-    width: auto;
-  }
-
   &:nth-child(8n+4){
     margin-right: 20%;
+  }
+
+  @media (max-width: $md - 1px) {
+    @include py(5px)
+    width: auto;
+
+    &:nth-child(8n+4){
+      margin-right: 0;
+    }
   }
 
 }
