@@ -18,22 +18,18 @@ $gapBetweenSides--width:220px;
   width: 100%;
   padding-top: 25px;
 
-  // $main-screen--vertical-lines-margin: 20.4vw;
-  // &:before, &:after{
-  //   position: absolute;
-  //   top: 100%;
-  //   content: '';
-  //   height: 100vh;
-  //   width: 1px;
-  //   background-color: $main-screen-before-after--BGColor;
-  // }
-  // &:before{left: $main-screen--vertical-lines-margin;}
-  // &:after{right: $main-screen--vertical-lines-margin;}
   @media (max-width: $md - 1px){
     flex-direction: column;
   }
 
   @media (max-width: $xl - 1px) {
     width: 100%;
+  }
+
+  @media (max-width: $md - 1px) {
+    @include centeredX(0,0);
+    width: 200px;
+    padding-top: 65px;
+    display: block;
   }
 }
