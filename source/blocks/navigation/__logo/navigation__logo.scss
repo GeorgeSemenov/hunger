@@ -7,7 +7,6 @@
 
   @media (max-width: $md - 1px){
     @include square(50px);
-    transform: translate(-50%,-100%);
     top: 0;
   }
 }

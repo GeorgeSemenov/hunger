@@ -1,12 +1,18 @@
 .navigation__socials {
   display: flex;
-  @media (min-width: $lg){
-    // @include centeredY($top:56%)
-    justify-content: space-around;
-    right: 5.4vw;
-    top: 37.7vh;
-    height: 245px;
-    flex-direction: column;
-    position: absolute;
+  justify-content: space-around;
+  right: 5.4vw;
+  top: 37.7vh;
+  height: 245px;
+  flex-direction: column;
+  position: absolute;
+
+  @media (max-width: $md - 1px){
+    right: 0;
+    top: 0;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    @include py(10px);
   }
 }

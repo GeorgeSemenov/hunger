@@ -3,9 +3,15 @@
   flex-grow: 1;
   justify-content: space-around;
   position: relative;
-
+  height: 0px;
 
   @media (max-width: $md - 1px){
-    display: block
+    background-color: $navigaiont__content-md--BGColor;
+    overflow: hidden;
+    display: block;
+
+    .navigation__sandwich-input:checked ~ &{
+      height: auto;
+    }
   }
 }
