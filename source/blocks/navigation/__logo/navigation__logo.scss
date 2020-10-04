@@ -5,8 +5,16 @@
   position: absolute;
 
 
+  @media (max-height: 500px) {
+    @include square (50px);
+  }
+
   @media (max-width: $md - 1px){
     @include square(50px);
     top: 0;
+
+    @media (max-height: 400px) {
+        display: none;
+    }
   }
 }

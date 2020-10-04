@@ -1,3 +1,4 @@
+@import '_desktop-theme_dark/navigation_desktop-theme_dark';
 @import '__social/navigation__social';
 @import '__sandwich-ico-container/navigation__sandwich-ico-container';
 @import '__sandwich-input/navigation__sandwich-input';
@@ -26,7 +27,7 @@ $gapBetweenSides--width:220px;
     @include centeredX(0,0);
     flex-direction: column;
     width: 200px;
-    padding-top: 65px;
+    padding-top: 25px;
     display: block;
     z-index: 1;
   }

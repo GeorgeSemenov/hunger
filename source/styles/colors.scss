@@ -1,4 +1,5 @@
 /* no sense variables */
+$transparent: transparent;
 
 $white: #fff;
 
@@ -25,8 +26,11 @@ $social--borderColor: $gray-lightest;
 $social-hover--borderColor: $orange;
 
 $navigation__item--color: $white;
-$navigation-before-after--BGColor: $gray-lightest;
 $navigaiont__content-md--BGColor: $black;
+$navibation__sandwich-ico--BGColor: $orange;
+$navibation__sandwich-ico-after-before--BGColor: $navibation__sandwich-ico--BGColor;
+$navigation-before-after--BGColor: $gray-lightest;
+$navigation_desktop-theme_dark--BGColor: $black;
 
 $downward--BGColor: $white;
 $downward-after--color: $black;

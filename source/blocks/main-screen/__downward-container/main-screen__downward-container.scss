@@ -24,4 +24,8 @@
     bottom:$main-screen__downward--height;
     top:-57vh;
   }
+
+  @media (max-height: 515px) {
+      bottom: 5px;
+  }
 }

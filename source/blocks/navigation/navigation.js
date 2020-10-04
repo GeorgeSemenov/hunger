@@ -2,10 +2,10 @@ $(document).ready(function(){
   var $window = $(window);
   $window.scroll(function () {
     if ($window.scrollTop()>=($window.height()-100)){
-      $(".navigation").css({"background":"#000000"});
+      $(".navigation").addClass('navigation_desktop-theme_dark');
     }
     else{
-      $(".navigation").css({"background":"transparent"});
+      $(".navigation").removeClass('navigation_desktop-theme_dark');
     }
   })
 })
