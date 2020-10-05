@@ -1,2 +1,7 @@
 @import '_highlighted/text-box_highlighted';
-.text-box {}
+.text-box {
+  text-align: center;
+  font-family: 'open-sans' ,Georgia , serif;
+  font-size: 1rem;
+  line-height: 2rem;
+}
