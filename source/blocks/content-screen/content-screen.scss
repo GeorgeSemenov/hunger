@@ -5,4 +5,7 @@
 @import '__image/content-screen__image';
 @import '__header/content-screen__header';
 @import '__content-box/content-screen__content-box';
-.content-screen {}
+.content-screen {
+  display: flex;
+  height: 632px;
+}

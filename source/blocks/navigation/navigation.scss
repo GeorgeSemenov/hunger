@@ -1,11 +1,12 @@
+@import '_desktop-theme_small-logo/navigation_desktop-theme_small-logo';
+$side--width:530px;
+$gapBetweenSides--width:220px;
 @import '_desktop-theme_dark/navigation_desktop-theme_dark';
 @import '__social/navigation__social';
 @import '__sandwich-ico-container/navigation__sandwich-ico-container';
 @import '__sandwich-input/navigation__sandwich-input';
 @import '__sandwich-ico/navigation__sandwich-ico';
 @import '__content/navigation__content';
-$side--width:530px;
-$gapBetweenSides--width:220px;
 @import '__menu/navigation__menu';
 @import '__socials/navigation__socials';
 @import '__item-text/navigation__item-text';
@@ -18,6 +19,14 @@ $gapBetweenSides--width:220px;
   justify-content: space-between;
   width: 100%;
   padding-top: 25px;
+
+  &.navigation_desktop-theme_dark {
+    background-color: $navigation_desktop-theme_dark--BGColor;
+
+    @media (max-width: $xl - 1px) {
+      background-color: $transparent;
+    }
+  }
 
   @media (max-width: $xl - 1px) {
     width: 100%;
@@ -32,3 +41,4 @@ $gapBetweenSides--width:220px;
     z-index: 1;
   }
 }
+

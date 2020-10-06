@@ -1,4 +1,5 @@
 .navigation__logo {
+  @include transition();
   @include square(150px);
   @include centeredX();
   cursor: pointer;
@@ -16,5 +17,13 @@
     @media (max-height: 400px) {
         display: none;
     }
+  }
+}
+
+.navigation_desktop-theme_small-logo {
+  .navigation__logo{
+    @include square(75px);
+    @include transition();
+    top: -15px;
   }
 }

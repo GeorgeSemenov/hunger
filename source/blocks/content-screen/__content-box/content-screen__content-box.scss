@@ -1,1 +1,7 @@
-.content-screen__content-box {}
+.content-screen__content-box {
+  @include px(35px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}

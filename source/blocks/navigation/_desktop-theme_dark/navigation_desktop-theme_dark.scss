@@ -1,7 +1,3 @@
 .navigation_desktop-theme_dark {
-  background-color: $navigation_desktop-theme_dark--BGColor;
-
-  @media (max-width: $xl - 1px) {
-    background-color: $transparent;
-  }
+  /*этот модификатор делает фон navigation тёмным но только на десктопных широтах дисплея */
 }
