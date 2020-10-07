@@ -2,6 +2,7 @@
   @include transition();
   @include square(150px);
   @include centeredX();
+  top: 0;
   cursor: pointer;
   position: absolute;
 

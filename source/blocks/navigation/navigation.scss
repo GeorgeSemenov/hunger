@@ -1,6 +1,4 @@
 @import '_desktop-theme_small-logo/navigation_desktop-theme_small-logo';
-$side--width:530px;
-$gapBetweenSides--width:220px;
 @import '_desktop-theme_dark/navigation_desktop-theme_dark';
 @import '__social/navigation__social';
 @import '__sandwich-ico-container/navigation__sandwich-ico-container';
@@ -23,7 +21,7 @@ $gapBetweenSides--width:220px;
   &.navigation_desktop-theme_dark {
     background-color: $navigation_desktop-theme_dark--BGColor;
 
-    @media (max-width: $xl - 1px) {
+    @media (max-width: $md - 1px) {
       background-color: $transparent;
     }
   }
@@ -35,8 +33,8 @@ $gapBetweenSides--width:220px;
   @media (max-width: $md - 1px) {
     @include centeredX(0,0);
     flex-direction: column;
-    width: 200px;
-    padding-top: 25px;
+    width: 100vw;
+    padding-top: 0;
     display: block;
     z-index: 1;
   }

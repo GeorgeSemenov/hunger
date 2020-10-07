@@ -2,6 +2,10 @@
 1)Что не так со шрифтами на content-screen, вроде значения выставле
   нны верно, но все равно не получается pixel perfect, особенно 
   это касается content-screen__content-box>text-box
+2)Почему интересно в высоту navigation не входит весь 
+  navigation__content? Мне пришлось задавать одинаковый бэкграунд и 
+  для   navigation и для navigation__content, как этого можно 
+  избежать?
 10.5) Проблему бы решил overflow: scroll, на элементе 
   navigation__content, но он почему то не работает.
   интересно, почему?

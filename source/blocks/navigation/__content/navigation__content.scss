@@ -7,10 +7,10 @@
   @media (max-width: $md - 1px){
     @include transition();
     background-color: $navigaiont__content-md--BGColor;
-    overflow: hidden;
+    overflow-y: scroll;
     display: block;
-    top: 15px;
     transform: translatex(-100%);
+    min-height: 100vh;
 
     .navigation__sandwich-input:checked ~ &{
       @include transition();
