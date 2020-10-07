@@ -1,5 +1,6 @@
 .content-screen__content-box {
-  @include px(35px);
+  padding-left: 95px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
