@@ -4,7 +4,6 @@ include ../../blocks/social/social.pug
 include ../../blocks/navigation/navigation.pug
 include ../../blocks/downward/downward.pug
 include ../../blocks/main-screen/main-screen.pug
-include ../../blocks/navigation-and-main-screen/navigation-and-main-screen.pug
 include ../../blocks/content-screen/content-screen.pug
 doctype html
 html(lang="ru")
@@ -12,8 +11,11 @@ html(lang="ru")
     meta(charset = "utf-8")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title Hunger
-  body
-    +navigation-and-main-screen()
+  body.preload
+    +navigation({
+      items:['home','about','team','booking','menu','galerie','events','contact']
+    })(class="")
+    +main-screen()
     +content-screen({
       headerText: "about us",
       textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",

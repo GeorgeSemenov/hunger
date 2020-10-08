@@ -14,7 +14,8 @@
   }
 
   @media (max-width: $md - 1px) {
-    @include py(10px)
+    @include py(15px)
+    font-size: 2rem;
     width: auto;
 
     &:nth-child(8n+4){
