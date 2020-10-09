@@ -12,9 +12,17 @@
     height: 4px;
     background-color: $header-after--BGColor;
     border-radius: 10px;
+    position: relative;
+    top: 0px;
+    margin-top: 15px
   }
 
   &.header_color_white{
     color: $header__text_color_white--color;
   }
+}
+
+.header_big.header:after {
+  top: 6px;
+  margin-top: 0px;
 }
