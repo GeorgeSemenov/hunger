@@ -1,1 +1,9 @@
-.content-screen__header {}
+.content-screen__header {
+  position: relative;
+  left: 25px;
+  margin-bottom: 15px;
+
+  @media (max-width: $lg - 1px){
+    left: 0;
+  }
+}

@@ -1,1 +1,5 @@
-.content-screen__text-box {}
+.content-screen__text-box {
+  &+&{
+    margin-top: 20px;
+  }
+}

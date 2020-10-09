@@ -1,3 +1,4 @@
+@import '__content/content-screen__content';
 @import '__text-box/content-screen__text-box';
 @import '_image-position_both-sides/content-screen_image-position_both-sides';
 @import '_image-position_left/content-screen_image-position_left';
@@ -8,4 +9,8 @@
 .content-screen {
   display: flex;
   height: 632px;
+
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+  }
 }
