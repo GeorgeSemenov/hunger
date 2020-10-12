@@ -5,5 +5,17 @@ include ../text-box/text-box.pug
 include ../header/header.pug
 mixin content-screen(modifier)
   .content-screen&attributes(attributes)
-    +content-screen__content-box(modifier)
-    +content-screen__content-box(modifier)
+    if (attributes.class == undefined)
+      attributes.class=""
+    if (attributes.class.indexOf('_image-position_both-sides') > -1)
+      - var isFirstContentBoxHaveImage = true;
+      - var isSecondContentBoxHaveImage = true;
+    else if (attributes.class.indexOf('_image-position_left') > -1)
+      - var isFirstContentBoxHaveImage = true;
+      - var isSecondContentBoxHaveImage = false;
+    else if (attributes.class.indexOf('_image-position_right') > -1)
+      - var isFirstContentBoxHaveImage = false;
+      - var isSecondContentBoxHaveImage = true
+
+    +content-screen__content-box(Object.assign(modifier, {_haveImage: isFirstContentBoxHaveImage}))
+    +content-screen__content-box(Object.assign(modifier, {_haveImage: isSecondContentBoxHaveImage}))
