@@ -5,8 +5,6 @@ include ../text-box/text-box.pug
 include ../header/header.pug
 mixin content-screen(modifier)
   .content-screen&attributes(attributes)
-    if (attributes.class == undefined)
-      attributes.class=""
     if (attributes.class.indexOf('_image-position_both-sides') > -1)
       - var isFirstContentBoxHaveImage = true;
       - var isSecondContentBoxHaveImage = true;

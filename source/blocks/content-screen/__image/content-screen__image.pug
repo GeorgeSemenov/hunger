@@ -1,2 +1,5 @@
 mixin content-screen__image(modifier)
-  .content-screen__image&attributes(attributes)
+  picture.content-screen__image&attributes(attributes)
+    source(srcset="../../../img/fire&coals-400.png" media="(min-width: 600px)")
+    source(srcset="../../../img/fire&coals-200.png" media="(min-width: 320px)")
+    img(src="../../../img/fire&coals.png" alt="fire and coal")
