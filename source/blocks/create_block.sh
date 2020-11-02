@@ -21,6 +21,8 @@ ${TAB}.${fileName}&attributes(attributes)
 end
 # Ну и создаём js файлик
 cat >${fileName}.js << end
+${dollar}(document).ready(function(){
+})
 end
 #
 #
