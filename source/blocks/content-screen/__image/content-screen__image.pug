@@ -2,4 +2,5 @@ mixin content-screen__image(modifier)
   picture.content-screen__image&attributes(attributes)
     source(type="image/webp" srcset=require("../../img/fire&coals-400.png") media="(min-width: 600px)")
     source(type="image/webp" srcset=require("../../img/fire&coals-200.png") media="(min-width: 320px)")
-    img(src=require("../../img/fire&coals.png") alt="fire and coal")
+    +content-screen__img()
+    
