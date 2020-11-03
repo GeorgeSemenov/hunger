@@ -1,3 +1,30 @@
 .content-screen__image {
-  @include suqare(475px);
+  @include square(475px);
+  position: relative;
+
+  &:after{
+    @include square(210px);
+    top: 50%;
+    position: absolute;
+    border-radius: 5px;
+    border: 20px solid $content-screen__image-after--borderColor;
+    content:"";
+    display: block;
+   }
+}
+.content-screen_image-position_right{
+  .content-screen__image{
+    &:after {
+      right:0;
+      transform: translate(50%, -50%);
+    }
+  }
+}
+.content-screen_image-position_right{
+  .content-screen__image{
+    &:after {
+      left:0;
+      transform: translate(50%, 50%);
+    }
+  }
 }
