@@ -13,5 +13,7 @@
 
   @media (max-width: $md - 1px){
     flex-direction: column;
+    height: auto;
+    align-items: center;
   }
 }
