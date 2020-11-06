@@ -11,6 +11,10 @@
   @media (max-width: $lg - 1px){
     @include px(10px);
   }
+  @media (max-width: $md - 1px) {
+    width: 90%;
+    flex-direction: row;
+  }
 }
 
 .content-screen_image-position_right{

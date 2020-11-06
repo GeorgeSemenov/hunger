@@ -1,8 +1,9 @@
 .content-screen__header {
   position: relative;
   margin-bottom: 15px;
+  padding-left: 45px;
 
-  @media (max-width: $lg - 1px){
-    left: 0;
+  @media (max-width: $xl - 1px){
+    padding-left: 0;
   }
 }

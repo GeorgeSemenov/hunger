@@ -1,6 +1,8 @@
 .content-screen__image {
   @include square(475px);
   position: relative;
+  padding-left: 25px;
+
   @media (max-width: $xl - 1px) {
     @include square(300px);
   }

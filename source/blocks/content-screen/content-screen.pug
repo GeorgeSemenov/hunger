@@ -1,3 +1,4 @@
+include __banner/content-screen__banner.pug
 include __img/content-screen__img.pug
 include __content/content-screen__content.pug
 include __image/content-screen__image.pug
@@ -14,7 +15,9 @@ mixin content-screen(modifier)
       - var isSecondContentBoxHaveImage = false;
     else if (attributes.class.indexOf('_image-position_right') > -1)
       - var isFirstContentBoxHaveImage = false;
-      - var isSecondContentBoxHaveImage = true
+      - var isSecondContentBoxHaveImage = true;
 
+    if modifier.banner != undefined
+      +content-screen__banner(modifier)
     +content-screen__content-box(Object.assign(modifier, {_haveImage: isFirstContentBoxHaveImage}))
     +content-screen__content-box(Object.assign(modifier, {_haveImage: isSecondContentBoxHaveImage}))
