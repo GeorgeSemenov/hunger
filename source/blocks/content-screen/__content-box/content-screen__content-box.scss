@@ -7,22 +7,24 @@
   padding-left: 16px;
   position: relative;
 
-  &+&:before{
-    position: absolute;
-    content: '';
-    display: block;
-    background-color: $content-screen__content-box-before--BGColor;
-    height: 100%;
-    width: 1px;
-    left: 0;
-  }
-
   @media (max-width: $lg - 1px){
     @include px(10px);
   }
   @media (max-width: $md - 1px) {
     width: 90%;
     flex-direction: row;
+  }
+}
+
+.content-screen_with-lines{
+  .content-screen__content-box+.content-screen__content-box:before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $content-screen_with-lines__content-box-before--BGColor;
+    height: 100%;
+    width: 1px;
+    left: 0;
   }
 }
 
