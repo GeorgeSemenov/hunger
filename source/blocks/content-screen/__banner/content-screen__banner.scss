@@ -1,1 +1,27 @@
-.content-screen__banner {}
+.content-screen__banner {
+  position: absolute;
+  @include centeredX();
+  font-family: 'open-sans' ,Georgia , serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size : 1.2rem;
+  line-height : 14px;
+  text-align : center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: $content-screen__banner--Color;
+  top: 44px;
+  @media (max-width: $xl - 1px) {
+    top: 30px;
+  }
+  @media (max-width: $lg - 1px) {
+    top: 20px;
+  }
+  @media (max-width: $md - 1px) {
+    position: static;
+    @include py(10px);
+    top: auto;
+    left: none;
+    transform: none;
+  }
+}

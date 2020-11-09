@@ -3,8 +3,23 @@
   width: 570px;
   padding-left: 30px;
 
+
   @media (max-width: $xl - 1px) {
     width: 100%;
     padding-left: 0;
+  }
+
+
+}
+
+.content-screen_image-position_left{
+  .content-screen__content{
+    align-self: flex-start;
+    padding-left: 18px;
+
+    @media (max-width: $xl - 1px) {
+      align-self: auto;
+      padding-left: 0;
+    }
   }
 }

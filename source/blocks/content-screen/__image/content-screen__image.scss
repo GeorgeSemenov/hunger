@@ -39,9 +39,17 @@
 }
 .content-screen_image-position_left{
   .content-screen__image{
+    padding-left: 0;
+    padding-right: 50px;
+    align-self: flex-end;
     &:after {
       left:0;
       transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: $xl - 1px) {
+      padding-right: 0;
+      align-self: auto;
     }
   }
 }

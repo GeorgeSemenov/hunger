@@ -4,9 +4,18 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-
-  padding-top: 43px;
   padding-left: 16px;
+  position: relative;
+
+  &+&:before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $content-screen__content-box-before--BGColor;
+    height: 100%;
+    width: 1px;
+    left: 0;
+  }
 
   @media (max-width: $lg - 1px){
     @include px(10px);
@@ -35,5 +44,11 @@
   }
   .content-screen__content-box:nth-child(2) {
     align-items: flex-start;
+  }
+}
+
+.content-screen_theme_dark{
+  .content-screen__content-box{
+    color: $content-screen_theme_dark__content-box--Color;
   }
 }

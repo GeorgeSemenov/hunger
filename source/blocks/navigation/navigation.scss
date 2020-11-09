@@ -18,6 +18,7 @@
   justify-content: space-between;
   width: 100%;
   padding-top: 25px;
+  z-index: 1;
 
   &.navigation_desktop-theme_dark {
     background-color: $navigation_desktop-theme_dark--BGColor;
@@ -37,7 +38,6 @@
     width: 100vw;
     padding-top: 0;
     display: block;
-    z-index: 1;
   }
 }
 

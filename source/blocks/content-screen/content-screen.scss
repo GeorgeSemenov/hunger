@@ -1,3 +1,5 @@
+@import '_theme_dark/content-screen_theme_dark';
+@import '_theme_our-team/content-screen_theme_our-team';
 @import '__banner/content-screen__banner';
 @import '__img/content-screen__img';
 @import '__content/content-screen__content';
@@ -10,11 +12,41 @@
 @import '__content-box/content-screen__content-box';
 .content-screen {
   display: flex;
-  height: 632px;
+  height: 675px;
+  position: relative;
 
+  &:after, &:before{
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $content-screen-before-after--BGColor;
+    height: 100%;
+    width: 1px;
+  }
+  &:after{
+    right: 20.4%;
+  }
+  &:before{
+    left: 20.4%;
+  }
+
+  @media (max-width: $xl - 1px) {
+    padding-bottom: 0;
+  }
   @media (max-width: $md - 1px){
     flex-direction: column;
     height: auto;
     align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &.content-screen_theme_our-team{
+    background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables.png");
+    @media (max-width: $lg - 1px) {
+      background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables-md.png");
+    }
+    @media (max-width: $sm - 1px) {
+      background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables-mobile.png");
+    }
   }
 }
