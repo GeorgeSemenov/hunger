@@ -1,6 +1,6 @@
 .content-screen__banner {
-  position: absolute;
-  @include centeredX();
+  @include py(10px);
+  width: 100%;
   font-family: 'open-sans' ,Georgia , serif;
   font-weight: bold;
   font-style: normal;
@@ -10,7 +10,6 @@
   text-transform: uppercase;
   letter-spacing: 0.5em;
   color: $content-screen__banner--Color;
-  top: 44px;
   @media (max-width: $xl - 1px) {
     top: 30px;
   }

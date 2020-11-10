@@ -5,6 +5,7 @@
   align-items: center;
   width: 50%;
   padding-left: 16px;
+  box-sizing:border-box;
   position: relative;
 
   @media (max-width: $lg - 1px){

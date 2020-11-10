@@ -15,6 +15,7 @@
   display: flex;
   height: 675px;
   position: relative;
+  flex-wrap: wrap;
 
   &.content-screen_with-lines:after, &.content-screen_with-lines:before{
     position: absolute;
