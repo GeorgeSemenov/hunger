@@ -1,18 +1,12 @@
 .main-screen__timework {
-  position: absolute;
-  transform: translatex(-15%) rotate(-90deg);
-  left: 0;
-  top: 47.5%;
+  transform: rotate(-90deg);
   color: $main-screen__timework--color;
   font-family: 'open-sans' ,Georgia , serif;
   font-size: 12px;
 
   @media (max-width: $lg - 1px){
-    position: relative;
     transform: none;
-    left: auto;
-    top: auto;
-    margin-top: 30px;
     display: block;
+    margin-bottom: 15px;
   }
 }

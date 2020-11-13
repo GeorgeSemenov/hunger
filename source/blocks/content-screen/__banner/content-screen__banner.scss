@@ -1,5 +1,5 @@
 .content-screen__banner {
-  @include py(10px);
+  margin-bottom: 41px;
   width: 100%;
   font-family: 'open-sans' ,Georgia , serif;
   font-weight: bold;
@@ -11,16 +11,9 @@
   letter-spacing: 0.5em;
   color: $content-screen__banner--Color;
   @media (max-width: $xl - 1px) {
-    top: 30px;
-  }
-  @media (max-width: $lg - 1px) {
-    top: 20px;
+    margin-bottom: 30px;
   }
   @media (max-width: $md - 1px) {
-    position: static;
-    @include py(10px);
-    top: auto;
-    left: none;
-    transform: none;
+    margin-bottom: 15px;
   }
 }

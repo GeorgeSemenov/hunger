@@ -16,6 +16,7 @@
   height: 675px;
   position: relative;
   flex-wrap: wrap;
+  background-size: cover;
 
   &.content-screen_with-lines:after, &.content-screen_with-lines:before{
     position: absolute;
@@ -43,11 +44,15 @@
   }
 
   &.content-screen_theme_our-team{
+    height: auto;
+    padding-top: 45px;
     background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables.png");
     @media (max-width: $lg - 1px) {
+      padding-top: 30px;
       background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables-md.png");
     }
     @media (max-width: $sm - 1px) {
+      padding-top: 15px;
       background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables-mobile.png");
     }
   }

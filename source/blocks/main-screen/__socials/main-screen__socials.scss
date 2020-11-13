@@ -1,1 +1,7 @@
-.main-screen__socials {}
+.main-screen__socials {
+
+  @media (max-width: $md - 1px){
+    display: flex;
+    justify-content: center;
+  }
+}
