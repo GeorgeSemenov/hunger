@@ -1,3 +1,7 @@
+@import '_theme_booking/content-screen_theme_booking';
+@import '_with-clock/content-screen_with-clock';
+@import '_with-sending-form/content-screen_with-sending-form';
+@import '__sending-form/content-screen__sending-form';
 @import '_with-lines/content-screen_with-lines';
 @import '_theme_dark/content-screen_theme_dark';
 @import '_theme_our-team/content-screen_theme_our-team';
@@ -25,6 +29,8 @@
     background-color: $content-screen_with-lines-before-after--BGColor;
     height: 100%;
     width: 1px;
+    top: 0;
+    bottom: 0;
   }
   &.content-screen_with-lines:after{
     right: 20.4%;
@@ -35,6 +41,7 @@
 
   @media (max-width: $xl - 1px) {
     padding-bottom: 0;
+    @include px(15px);
   }
   @media (max-width: $md - 1px){
     flex-direction: column;
@@ -47,13 +54,16 @@
     height: auto;
     padding-top: 45px;
     background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables.png");
+    padding-bottom: 100px;
     @media (max-width: $lg - 1px) {
       padding-top: 30px;
       background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables-md.png");
+      padding-bottom: 70px;
     }
     @media (max-width: $sm - 1px) {
       padding-top: 15px;
       background-image: linear-gradient($content-screen_theme_our-team--BGImageGradient), url("../../img/vegetables-mobile.png");
+      padding-bottom: 30px;
     }
   }
 }

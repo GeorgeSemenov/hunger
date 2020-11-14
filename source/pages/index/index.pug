@@ -17,7 +17,9 @@ html(lang="ru")
     +navigation({
       items:['home','about','team','booking','menu','galerie','events','contact']
     })(class="")
-    +main-screen()
+    +main-screen({
+    	worktime: "Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM"
+    })
     +content-screen({
       headerText: "about us",
       textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
@@ -31,3 +33,7 @@ html(lang="ru")
       text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
       imgName: "masterChief"
     })(class="content-screen_with-lines content-screen_theme_our-team content-screen_image-position_left content-screen_theme_dark")
+    +content-screen({
+      headerText: "book a table",
+      imgName: "clocks"
+    })(class="content-screen_image-position_right content-screen_with-sending-form")

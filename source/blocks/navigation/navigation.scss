@@ -16,7 +16,6 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
-  // width: 100%;
   padding-top: 25px;
   z-index: 1;
 
@@ -25,17 +24,18 @@
 
     @media (max-width: $md - 1px) {
       background-color: $transparent;
+      width: auto;
     }
   }
 
   @media (max-width: $xl - 1px) {
-    // width: 100%;
+    width: 100%;
   }
 
   @media (max-width: $md - 1px) {
     @include centeredX(0,0);
     flex-direction: column;
-    // width: 100vw;
+    width: auto;
     padding-top: 0;
     display: block;
   }

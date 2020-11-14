@@ -6,7 +6,9 @@
   width: 50%;
   padding-left: 16px;
   box-sizing:border-box;
-  position: relative;
+  /*Не стоит ставить тут position: relative, т.к. линия потеряет
+    своё положение, см ниже у неё left: 50% и это значение берётся
+    относительно content-screen*/
 
   @media (max-width: $lg - 1px){
     @include px(10px);
@@ -23,9 +25,10 @@
     content: '';
     display: block;
     background-color: $content-screen_with-lines__content-box-before--BGColor;
-    height: 100%;
     width: 1px;
-    left: 0;
+    left: 50%;
+    top: 0;
+    bottom: 0;
   }
 }
 

@@ -13,11 +13,24 @@ mixin content-screen(modifier)
     else if (attributes.class.indexOf('_image-position_left') > -1)
       - var isFirstContentBoxHaveImage = true;
       - var isSecondContentBoxHaveImage = false;
+      if (attributes.class.indexOf('_with-sending-form') > -1)
+        - var isSecondContentBoxHaveSendingForm = true;
+        - var isFirstContentBoxHaveSendingForm = false;
     else if (attributes.class.indexOf('_image-position_right') > -1)
       - var isFirstContentBoxHaveImage = false;
       - var isSecondContentBoxHaveImage = true;
+      if (attributes.class.indexOf('_with-sending-form') > -1)
+        - var isFirstContentBoxHaveSendingForm = true;
+        - var isSecondContentBoxHaveSendingForm = false;
 
     if modifier.banner != undefined
       +content-screen__banner(modifier)
-    +content-screen__content-box(Object.assign(modifier, {_haveImage: isFirstContentBoxHaveImage}))
-    +content-screen__content-box(Object.assign(modifier, {_haveImage: isSecondContentBoxHaveImage}))
+
+    +content-screen__content-box(Object.assign(modifier, {
+      _haveImage: isFirstContentBoxHaveImage,
+      _haveSendingForm: isFirstContentBoxHaveSendingForm
+    }))
+    +content-screen__content-box(Object.assign(modifier, {
+      _haveImage: isSecondContentBoxHaveImage,
+      _haveSendingForm: isSecondContentBoxHaveSendingForm
+    }))

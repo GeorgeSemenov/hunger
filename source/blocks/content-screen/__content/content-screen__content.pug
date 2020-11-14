@@ -2,5 +2,8 @@ mixin content-screen__content(modifier)
   .content-screen__content&attributes(attributes)
     +header({
       text:modifier.headerText})(class="content-screen__header")
-    +text-box(modifier.textHighlighted)(class='content-screen__text-box text-box_highlighted')
-    +text-box(modifier.text)(class='content-screen__text-box')
+    if modifier._haveSendingForm
+      span "hello, this is place for sanding-form"
+    else
+      +text-box(modifier.textHighlighted)(class='content-screen__text-box text-box_highlighted')
+      +text-box(modifier.text)(class='content-screen__text-box')
