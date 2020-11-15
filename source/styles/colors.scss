@@ -9,7 +9,10 @@ $black: #333333;
 $nearly-black: #393E46;
 
 $gray-lightest: rgba(255, 255, 255, 0.2);
+$gray-light: rgba(51, 51, 51, 0.5);
 $gray: rgba(255, 255, 255, 0.5);
+$gray-without-opacity: #E5E5E5;
+
 
 $shadow-gradient: (0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 /* variables with sense */
@@ -50,3 +53,6 @@ $content-screen__image-after--borderColor: $orange;
 $content-screen__banner--Color: $white;
 $content-screen_theme_our-team--BGImageGradient: $shadow-gradient;
 $content-screen_theme_dark__content-box--Color: $white;
+
+$sendingForm__inputField--BGColor:$gray-without-opacity;
+$sendingForm__inputField--color: $gray-light;

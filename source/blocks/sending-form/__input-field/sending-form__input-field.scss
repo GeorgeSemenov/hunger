@@ -1,1 +1,19 @@
-.sending-form__input-field {}
+.sending-form__input-field {
+  width: 257px;
+  background-color: $sendingForm__inputField--BGColor;
+  border-radius: 5px;
+  font-family: 'open-sans' ,Georgia , serif;
+  font-size: 1.4rem;
+  line-height: 19px;
+  font-weight: normal;
+  color: $sendingForm__inputField--color;
+  border-width: 0;
+  @include py(20px);
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+
+  &:nth-child(2n){
+    margin-right:0;
+  }
+}
