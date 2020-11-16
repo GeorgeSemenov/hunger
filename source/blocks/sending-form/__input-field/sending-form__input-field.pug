@@ -1,2 +1,9 @@
-mixin sending-form__input-field(modifier)
-  input.sending-form__input-field&attributes(attributes)
+mixin sending-form__input-field(options)
+  if options == undefined
+    - options = ['options','empty']
+  if (attributes.class.indexOf('selection') > -1)
+    select.sending-form__input-field&attributes(attributes)
+      each opn in options
+        option!=opn
+  else
+    input.sending-form__input-field&attributes(attributes)

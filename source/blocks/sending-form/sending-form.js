@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   function createMask(string){
     if ((string.length > 2) && (string.length <= 4)){
-      return string.replace(/([0-2][0-9])/,"$1/");
+      return string.replace(/(\d{2})/,"$1/");
     }
     return string.replace(/(\d{2})(\d{3})(\d{2})/,"$1-$2-$3");
   }

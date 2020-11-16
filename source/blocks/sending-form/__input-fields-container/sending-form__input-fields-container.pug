@@ -1,5 +1,4 @@
 mixin sending-form__input-fields-container(modifier)
   .sending-form__input-fields-container&attributes(attributes)
-    - var n = 0;
-    each objVal in [{placeholder:"Name", class:""},{placeholder:"Email", class:""},{placeholder:"Phone", class:""},{placeholder:"People", class:"sending-form__input-field_selection"},{placeholder:"Date(mm/dd)", class:"sending-form__input-field_date"},{placeholder:"Time", class:"sending-form__input-field_selection"}]
-      +sending-form__input-field(modifier)(class=objVal.class placeholder=objVal.placeholder)
+    each objVal in [{placeholder:"Name", class:""},{placeholder:"Email", class:""},{placeholder:"Phone", class:""},{placeholder:"People", class:"sending-form__input-field_selection",options:['people',"1 human", "2 men", "3 people"]},{placeholder:"Date(mm/dd)", class:"sending-form__input-field_date"},{placeholder:"Time", class:"sending-form__input-field_selection", options: ["Time", "Future", "Present", "Past"]}]
+      +sending-form__input-field(objVal.options)(class=objVal.class placeholder=objVal.placeholder)
