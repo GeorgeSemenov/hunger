@@ -1,7 +1,7 @@
 include __input-field/sending-form__input-field.pug
-include __submit-button/sending-form__submit-button.pug
 include __input-fields-container/sending-form__input-fields-container.pug
+include ../link/link.pug
 mixin sending-form(modifier)
   form.sending-form&attributes(attributes)
     +sending-form__input-fields-container(modifier)
-    +sending-form__submit-button(modifier)
+    +link.sending-form__submit-button()(class="link_theme_button")
