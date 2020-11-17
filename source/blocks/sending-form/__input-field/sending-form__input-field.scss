@@ -16,4 +16,13 @@
   &:nth-child(2n){
     margin-right:0;
   }
+
+  &:nth-last-child(1),
+  &:nth-last-child(2){
+    margin-bottom: 0;
+  }
+
+  &.sending-form__input-field_selection{
+    width: 280px;
+  }
 }
