@@ -1,1 +1,5 @@
-.sending-form__input-fields-container {}
+.sending-form__input-fields-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
