@@ -3,7 +3,14 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
+  padding-top: 130px;
+  position: relative;
+  @media (max-width: $xl - 1px) {
+    padding-top:  50px;
+  }
   @media (max-width: $md - 1px){
+    padding-top: 0;
     display: block;
+    position: static;
   }
 }
