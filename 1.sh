@@ -1,9 +1,18 @@
-#!/bin/sh
-read -p "enter your commit message: " messagues
-echo $messagues
-git add --all
-git commit -m $messagues
-git push origin
+!/bin/bash
+# lines that start like this are shell comments
+# read projects current directory with $PWD
+echo “running command from” $PWD
+cd $PWD
+git add .
+echo “Enter commit message: “
+git commit -am “$commitMessage”
+git push
+
+# read -p "enter your commit message: " messagues
+# echo $messagues
+# git add --all
+# git commit -m $messagues
+# git push origin
 # FILE="file where i write.txt"
 # /bin/cat <<EOM >$FILE
 # text1
