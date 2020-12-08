@@ -6,8 +6,11 @@
   font-size: 12px;
   left: -32px;
 
-
   @media (max-width: $lg - 1px){
+    left: -9%;
+  }
+  @media (max-width: $md - 1px){
+    left: 0;
     transform: none;
     display: block;
     margin-bottom: 15px;
