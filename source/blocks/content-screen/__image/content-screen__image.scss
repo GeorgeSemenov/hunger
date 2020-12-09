@@ -71,3 +71,13 @@
     }
   }
 }
+
+.content-screen_theme_booking{
+  .content-screen__image{
+    padding-left: 8%;
+
+    @media (max-width: $xl - 1px){
+      padding-left: 0;
+    }
+  }
+}

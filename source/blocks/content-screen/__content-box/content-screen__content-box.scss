@@ -59,8 +59,21 @@
   }
 }
 
-.content-screen_with-sending-form{
+.content-screen_with-sending-form.content-screen_image-position_right{
   .content-screen__content-box:nth-child(2) {
     padding-top: 16px;
+  }
+}
+
+.content-screen_theme_booking{
+  .content-screen__content-box{
+    &:nth-child(2){
+      @media (max-width: $xl - 1px){
+        align-items: center;
+      }
+      @media (max-width: $md - 1px){
+        margin-bottom: 4%;
+      }
+    }
   }
 }
