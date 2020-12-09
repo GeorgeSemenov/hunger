@@ -1,1 +1,7 @@
-.main-screen__fake-block {}
+.main-screen__fake-block {
+
+  @media (max-width: $md - 1px) {
+    display: none;
+    order: 4;
+  }
+}

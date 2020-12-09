@@ -2,6 +2,7 @@
   align-self: center;
 
   @media (max-width: $md - 1px){
+    order: 2;
     display: flex;
     justify-content: center;
   }

@@ -58,3 +58,9 @@
     color: $content-screen_theme_dark__content-box--Color;
   }
 }
+
+.content-screen_with-sending-form{
+  .content-screen__content-box:nth-child(2) {
+    padding-top: 16px;
+  }
+}
