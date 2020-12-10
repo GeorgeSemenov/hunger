@@ -4,4 +4,4 @@ include ../link/link.pug
 mixin sending-form(modifier)
   form.sending-form&attributes(attributes)
     +sending-form__input-fields-container(modifier)
-    +link.sending-form__submit-button()(class="link_theme_button")
+    +link({text: modifier.buttonText})(class="sending-form__submit-button link_theme_button")

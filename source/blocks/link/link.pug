@@ -4,7 +4,6 @@ mixin link(modifier)
       - modifier = {};
   if modifier.text == undefined
     - modifier.text = "some button text";
-    
   if (attributes.class.indexOf("_theme_button")> -1)
     button.link()&attributes(attributes)
       +link__text(modifier)
