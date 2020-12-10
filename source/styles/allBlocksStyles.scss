@@ -1,5 +1,6 @@
 /* Компоненты */
 @import '../vendor/UnCss';/* т.к. он сбрасывает все стили */
+@import '../vendor/slickCarousel/slick/slick';
 
 /* Шрифты */
 
@@ -29,3 +30,4 @@
 @import '../blocks/preloader/preloader';
 @import '../blocks/sending-form/sending-form';
 @import '../blocks/annotation/annotation';
+@import '../blocks/carousel/carousel';

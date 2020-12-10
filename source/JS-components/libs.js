@@ -1,0 +1,1 @@
+import '../vendor/slickCarousel/slick/slick.js';
