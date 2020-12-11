@@ -1,7 +1,17 @@
+include ../content-screen/content-screen.pug
 mixin carousel(modifier)
   .carousel&attributes(attributes)
-    .squaredblock 1
-    .squaredblock 2
-    .squaredblock 3
-    .squaredblock 4
-    .squaredblock 5
+    +content-screen(modifier)(class="content-box_specialties content-screen_image-position_left")
+    +content-screen({
+      banner: "our team",
+      headerText: "master chief",
+      textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
+      text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
+      imgName: "masterChief"
+    })(class="content-screen_with-lines content-screen_theme_our-team content-screen_image-position_left content-screen_theme_dark")
+    +content-screen({
+      headerText: "about us",
+      textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
+      text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
+      imgName: "fire&coals"
+    })(class="content-screen_image-position_right" id="second-screen")
