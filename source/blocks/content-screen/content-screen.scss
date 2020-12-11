@@ -69,6 +69,24 @@
   }
   &.content-screen_theme_booking{
     justify-content: center;
-    padding-top: 40px;
+    box-sizing: border-box;
+    align-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 43px;
+
+    @media (max-width: $md - 1px){
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+  }
+  &.content-screen_theme_specialties{
+    background-size: cover;
+    background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew.png");
+    @media (max-width: $lg - 1px) {
+      background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-md.png");
+    }
+    @media (max-width: $sm - 1px) {
+      background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-mobile.png");
+    }
   }
 }
