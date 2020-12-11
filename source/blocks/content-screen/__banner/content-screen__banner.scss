@@ -21,5 +21,8 @@
 .content-screen_theme_specialties{
   .content-screen__banner {
     margin-bottom: 0;
+    @media (max-width: $md - 1px){
+      margin-bottom: 15px;
+    }
   }
 }
