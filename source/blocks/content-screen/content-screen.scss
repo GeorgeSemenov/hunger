@@ -82,8 +82,17 @@
   &.content-screen_theme_specialties{
     background-size: cover;
     background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew.png");
+    box-sizing: border-box;
+    padding-top: 44px;
+    padding-bottom: 87px;
+    padding-left: 21px;
+
     @media (max-width: $lg - 1px) {
       background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-md.png");
+    }
+
+    @media (max-width: $xl - 1px){
+      padding-left: 0;
     }
     @media (max-width: $sm - 1px) {
       background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-mobile.png");

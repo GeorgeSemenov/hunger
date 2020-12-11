@@ -77,3 +77,14 @@
     }
   }
 }
+
+.content-screen_theme_specialties{
+  .content-screen__content-box{
+    &:nth-child(2){
+      padding-left: 24px;
+      @media (max-width: $md - 1px){
+        padding-left: 0px;
+      }
+    }
+  }
+}
