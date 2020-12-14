@@ -1,3 +1,31 @@
 .carousel {
+  background: green;
+  &.slick-slider{
+    display: flex;
+  }
+  .slick-arrow{
+    display: none;
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 1%;
+    @include centeredX();
+    display: flex;
 
+    li{
+      @include square(20px);
+      color: $transparent;
+      margin-right: 10px;
+      border-radius: 100%;
+      border: 1px solid black;
+      background-color: $transparent;
+
+      &:last-child{
+        margin-right: 0;
+      }
+      &.slick-active{
+        background-color: red;
+      }
+    }
+  }
 }
