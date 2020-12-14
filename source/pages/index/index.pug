@@ -47,22 +47,7 @@ html(lang="ru")
         text_highlighted3 : "+40 729 131 637/+40 726 458 782 ",
       }
     })(class="content-screen_image-position_right content-screen_theme_booking content-screen_with-sending-form")
-    +content-screen({
-      banner: "specialties",
-      headerText: "chocolate pancakes",
-      textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
-      text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
-      imgName: "chocolate"})(class="content-screen_theme_specialties content-screen_with-lines content-screen_image-position_left content-screen_theme_dark")
-    +carousel([{
-      value:{
-        banner: "specialties",
-        headerText: "chocolate pancakes",
-        textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
-        text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
-        imgName: "chocolate"
-      },
-      attributes: "content-screen_theme_specialties content-screen_with-lines content-screen_image-position_left content-screen_theme_dark"
-    },
+    +carousel([
     {
       value:{
         banner: "our team",
@@ -72,6 +57,16 @@ html(lang="ru")
         imgName: "masterChief"
       },
       attributes: "content-screen_with-lines content-screen_theme_our-team content-screen_image-position_left content-screen_theme_dark"
+    },
+    {
+      value:{
+        banner: "specialties",
+        headerText: "chocolate pancakes",
+        textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
+        text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
+        imgName: "chocolate"
+      },
+      attributes: "content-screen_theme_specialties content-screen_with-lines content-screen_image-position_left content-screen_theme_dark"
     },
     {
       value:{
@@ -89,3 +84,12 @@ html(lang="ru")
       },
       attributes:"content-screen_image-position_right content-screen_theme_booking content-screen_with-sending-form"
     }])
+    +content-screen({
+      banner: "private events",
+      imgName: "rings",
+      annotation: {
+          text_regular1 : "For private events please call: ",
+          text_highlighted2 : "+40 729 131 637/+40 726 458 782 ",
+          text_regular3 : "or use the contact form.",
+        }
+    })(class="content-screen_image-position_both-sides content-screen_theme_private-events")

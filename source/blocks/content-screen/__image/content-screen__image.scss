@@ -81,3 +81,12 @@
     }
   }
 }
+
+.content-screen_theme_our-team{
+  .content-screen__image:after{
+    left: 15px;
+    @media (max-width: $md - 1px){
+      left: 0;
+    }
+  }
+}

@@ -1,5 +1,4 @@
 .carousel {
-  background: green;
   &.slick-slider{
     display: flex;
   }
@@ -8,23 +7,23 @@
   }
   .slick-dots{
     position: absolute;
-    bottom: 1%;
+    bottom: 6.5%;
     @include centeredX();
     display: flex;
 
     li{
-      @include square(20px);
+      @include square(10px);
       color: $transparent;
-      margin-right: 10px;
+      margin-right: 17px;
       border-radius: 100%;
       border: 1px solid black;
-      background-color: $transparent;
+      background-color: $carousel__dots--BGColor;
 
       &:last-child{
         margin-right: 0;
       }
       &.slick-active{
-        background-color: red;
+        background-color: $carousel__dots-active--BGColor;
       }
     }
   }
