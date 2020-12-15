@@ -1,6 +1,6 @@
 mixin content-screen__image(modifier)
   picture.content-screen__image&attributes(attributes)
-    case modifier.imgName
+    case modifier._imgName
       when "fire&coals"
         source(type="image/webp" srcset=require("../../img/fire&coals-400.png") media="(max-width: 600px)")
         source(type="image/webp" srcset=require("../../img/fire&coals-200.png") media="(max-width: 320px)")

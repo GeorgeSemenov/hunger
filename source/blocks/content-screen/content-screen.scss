@@ -1,3 +1,4 @@
+@import '__image-description/content-screen__image-description';
 @import '_theme_private-events/content-screen_theme_private-events';
 @import '_theme_specialties/content-screen_theme_specialties';
 @import '_theme_booking/content-screen_theme_booking';
@@ -98,5 +99,9 @@
     @media (max-width: $sm - 1px) {
       background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-mobile.png");
     }
+  }
+  &.content-screen_theme_private-events{
+    background-size: cover;
+    background-image: linear-gradient($content-screen_theme_private-events--BGImageGradient), url("../../img/stew.png");
   }
 }

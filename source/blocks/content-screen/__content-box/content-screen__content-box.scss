@@ -45,11 +45,11 @@
 }
 
 .content-screen_image-position_both-sides{
-  .content-screen__content-box:first-child {
+  .content-screen__content-box {
     align-items: flex-end;
-  }
-  .content-screen__content-box:nth-child(2) {
-    align-items: flex-start;
+    & + .content-screen__content-box{
+      align-items: flex-start;
+    }
   }
 }
 
