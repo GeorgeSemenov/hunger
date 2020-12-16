@@ -2,7 +2,5 @@ mixin content-screen__content-box(modifier)
   .content-screen__content-box&attributes(attributes)
     if modifier._haveImage
       +content-screen__image(modifier)
-      if modifier._imgDesc != undefined
-        +content-screen__image-description(modifier)
     else
       +content-screen__content(modifier)
