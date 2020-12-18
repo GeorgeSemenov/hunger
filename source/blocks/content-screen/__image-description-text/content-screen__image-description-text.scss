@@ -12,7 +12,12 @@
 .content-screen_image-position_both-sides{
   .content-screen__content-box + .content-screen__content-box{
     .content-screen__image-description-text{
-
+      right: -80px;
+      transform: rotate(-90deg);
+      bottom: 136px;
+      top: auto;
+      left: auto;
+      font-size: 3.2rem;
     }
   }
 }

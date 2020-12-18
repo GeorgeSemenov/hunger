@@ -89,3 +89,16 @@
     }
   }
 }
+
+.content-screen_theme_private-events{
+  .content-screen__content-box{
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 40px;
+    @media (max-width: $lg - 1px){padding-right: 0px;}
+  }
+  .content-screen__content-box + .content-screen__content-box{
+    justify-content: flex-start;
+    padding-right: 0px;
+  }
+}

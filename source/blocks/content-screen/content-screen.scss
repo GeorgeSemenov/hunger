@@ -1,3 +1,4 @@
+@import '__annotation/content-screen__annotation';
 @import '__image-description-container/content-screen__image-description-container';
 @import '__image-description-text/content-screen__image-description-text';
 @import '_theme_private-events/content-screen_theme_private-events';
@@ -102,7 +103,21 @@
     }
   }
   &.content-screen_theme_private-events{
+    box-sizing: border-box;
+    padding-top: 42px;
+    padding-bottom: 0px;
+    justify-content: center;
     background-size: cover;
     background-image: linear-gradient($content-screen_theme_private-events--BGImageGradient), url("../../img/stew.png");
+
+    @media (max-width: $lg - 1px) {
+      background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-md.png");
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: $sm - 1px) {
+      background-image: linear-gradient($content-screen_theme_specialties--BGImageGradient), url("../../img/stew-mobile.png");
+    }
   }
 }

@@ -11,8 +11,9 @@
 .content-screen_image-position_both-sides{
   .content-screen__content-box + .content-screen__content-box{
     .content-screen__image-description-container{
+      right: auto;
       top: 0;
-      left: 0;
+      left: 25px;
     }
   }
 }
