@@ -18,6 +18,12 @@
       top: auto;
       left: auto;
       font-size: 3.2rem;
+
+      @media (max-width: $md - 1px) {
+        right: -40px;
+        bottom: 85px;
+        font-size: 2.2rem;
+      }
     }
   }
 }
