@@ -7,6 +7,7 @@ include ../../blocks/downward/downward.pug
 include ../../blocks/main-screen/main-screen.pug
 include ../../blocks/content-screen/content-screen.pug
 include ../../blocks/carousel/carousel.pug
+include ../../blocks/menu-screen/menu-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -84,6 +85,10 @@ html(lang="ru")
       },
       attributes:"content-screen_image-position_right content-screen_theme_booking content-screen_with-sending-form"
     }])
+    +menu-screen({
+      header: "Delicious menu",
+      subHeader: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna."
+    })
     +content-screen({
       banner: "private events",
       imgName: "rings",
