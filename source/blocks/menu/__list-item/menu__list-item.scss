@@ -1,1 +1,6 @@
-.menu__list-item {}
+.menu__list-item {
+  width: 370px;
+  @media (max-width: $sm - 1px) {
+    width: 300px;
+  }
+}
