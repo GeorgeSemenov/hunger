@@ -1,5 +1,16 @@
 include ../content-screen/content-screen.pug
 mixin carousel(modifier)
+  //- скорее всего дело в том, что в карусель будет подключаться другие скрипты и
+    скрипт slick.js вырывает этот блок из общего потока, что приводи к невозможности
+    проверить использовать условие на модификаторах.
+    span!=attributes.class.includes('carousel_theme_picture-line')
   .carousel&attributes(attributes)
-    each obj in modifier
-      +content-screen(obj.value)(class=obj.attributes)
+    - var str = attributes.class
+    if str == undefined
+        - str = someValue;
+    //- (str.indexOf('carousel_theme_picture-line') !== -1)
+    //- if attributes.class.includes('carousel_theme_picture-line')
+    //-   span hello
+    //- else
+      // each obj in modifier
+      //   +content-screen(obj.value)(class=obj.attributes)
