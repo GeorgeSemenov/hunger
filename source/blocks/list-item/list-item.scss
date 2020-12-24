@@ -4,4 +4,10 @@
 @import '__dot/list-item__dot';
 @import '__dots/list-item__dots';
 @import '__dish-name/list-item__dish-name';
-.list-item {}
+.list-item {
+  font-family: 'banny' ,times , serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: $list-item--color;
+  font-weight: bold;
+}

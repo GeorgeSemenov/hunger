@@ -1,1 +1,6 @@
-.list-item__description {}
+.list-item__description {
+  text-transform: lowercase;
+  font-size: 1.28rem;
+  color: $list-item__description--color;
+  display: flex;
+}

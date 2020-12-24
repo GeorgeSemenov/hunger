@@ -13,6 +13,7 @@ $gray-lightest: rgba(255, 255, 255, 0.2);
 $gray-light: rgba(51, 51, 51, 0.5);
 $gray: rgba(255, 255, 255, 0.5);
 $gray-without-opacity: #E5E5E5;
+$gray-darker: #d3d3d3;
 
 
 $shadow-gradient: (0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -66,4 +67,6 @@ $sendingForm__inputField--color: $gray-light;
 $carousel__dots--BGColor: $gray;
 $carousel__dots-active--BGColor: $white;
 
+$list-item--color: $black;
 $listItem__dot--BGColor: $black;
+$list-item__description--color: $gray-darker;
