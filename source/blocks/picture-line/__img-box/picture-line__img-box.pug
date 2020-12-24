@@ -1,0 +1,8 @@
+mixin picture-line__img-box(modifier)
+  picture.picture-line__img-box&attributes(attributes)
+    case modifier
+      when "briches"
+        source(type="image/webp" srcset=require("../../img/hall/briches-mob.png") media="(max-width: 500px)")
+        img(src=require("../../img/hall/briches.png") alt="coals")()&attributes(attributes)
+      default
+        p there is no such image
