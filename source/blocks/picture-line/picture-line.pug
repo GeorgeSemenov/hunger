@@ -1,0 +1,8 @@
+include __img-box/picture-line__img-box.pug
+mixin picture-line(modifier)
+  .picture-line&attributes(attributes)
+    if modifier.length == 0
+      - modifier = ['briches','chair','mazzo','tables']
+
+    each pic in modifier
+      picture-line__img-box
