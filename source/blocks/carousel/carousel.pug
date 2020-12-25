@@ -4,13 +4,8 @@ mixin carousel(modifier)
     скрипт slick.js вырывает этот блок из общего потока, что приводи к невозможности
     проверить использовать условие на модификаторах.
     span!=attributes.class.includes('carousel_theme_picture-line')
+    поэтому для других блоков где будет использоваться карусель - будут
+    создаваться специально заточенные элементы с классом carousel
   .carousel&attributes(attributes)
-    - var str = attributes.class
-    if str == undefined
-        - str = someValue;
-    //- (str.indexOf('carousel_theme_picture-line') !== -1)
-    //- if attributes.class.includes('carousel_theme_picture-line')
-    //-   span hello
-    //- else
-      // each obj in modifier
-      //   +content-screen(obj.value)(class=obj.attributes)
+    each obj in modifier
+      +content-screen(obj.value)(class=obj.attributes)

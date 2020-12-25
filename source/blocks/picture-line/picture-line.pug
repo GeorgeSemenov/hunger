@@ -1,9 +1,10 @@
+include __carousel/picture-line__carousel.pug
 include __content/picture-line__content.pug
 include __img-box/picture-line__img-box.pug
-include ../carousel/carousel.pug
 mixin picture-line(modifier)
   .picture-line&attributes(attributes)
     if modifier.length == 0
       - modifier = ['mazzo','briches','tables','chair']
     +picture-line__content(modifier)(class="picture-line_invisible_small-width")
-    +carousel.carousel_theme_picture-line.picture-line__carousel(modifier)
+
+    +picture-line__carousel(modifier)
