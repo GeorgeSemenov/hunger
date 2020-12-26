@@ -1,4 +1,18 @@
-mixin menu__list(modifier)
+mixin menu__list(list)
   .menu__list&attributes(attributes)
-    +list-item(modifier)(class="menu__list-item")
-    +list-item(modifier)(class="menu__list-item")
+
+    //- if list.length!= undefined
+    //-   span!= 'not empty'
+    //-   each item in list
+    //-     +list-item(item)(class="menu__list-item")
+    //- else
+    //-   span!= 'empty'
+    //-   - var i= 0
+    //-   while i < 21 
+    //-     - i++
+    //-     +list-item({
+    //-       listItemDishName: "pizza quatro stagioni",
+    //-       listItemPrice: '55,68',
+    //-       listItemDescription: "integer ulimacorper neque eu purus euismod"
+    //-     })(class="menu__list-item")
+

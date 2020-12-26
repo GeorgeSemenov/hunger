@@ -1,9 +1,11 @@
 mixin menu__lists-container(modifier)
   .menu__lists-container&attributes(attributes)
-    span!= modifier.navigationArr.length
-      while modifier.listsArr.length < modifier.navigationArr.length
-        - modifier.listsArr.push({})
-        // span!=listsArr.length
-
-    //- each list in listsArr
-    //-   +menu__list(list)
+    //- Принциписально сравнять массив списков и массив навигаций
+    //- в случае если массив навигаций будет больше, то
+    //- массив списков будет набит болванками, чтобы скрипт не ломался
+    //- while modifier.listsArr.length < modifier.navigationArr.length
+    //-   - modifier.listsArr.push({})
+    span!=listsArr.length
+    // each list in modifier.listsArr
+    //   span!= list.length
+    //   +menu__list(list)
