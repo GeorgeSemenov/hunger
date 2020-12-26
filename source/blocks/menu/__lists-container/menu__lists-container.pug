@@ -1,0 +1,9 @@
+mixin menu__lists-container(modifier)
+  .menu__lists-container&attributes(attributes)
+    span!= modifier.navigationArr.length
+      while modifier.listsArr.length < modifier.navigationArr.length
+        - modifier.listsArr.push({})
+        // span!=listsArr.length
+
+    //- each list in listsArr
+    //-   +menu__list(list)
