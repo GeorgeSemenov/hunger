@@ -1,4 +1,4 @@
 mixin menu__navigation(modifier)
   .menu__navigation&attributes(attributes)
     each navName, index in modifier.navigationArr
-      +menu__tab-container(navName)(data-trigger=index)
+      +menu__tab-container(navName)(data-trigger=(index + 1))

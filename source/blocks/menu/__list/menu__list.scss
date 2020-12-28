@@ -1,3 +1,6 @@
 .menu__list {
   display: none;
+  &.menu__list_active{
+    display: grid;
+  }
 }

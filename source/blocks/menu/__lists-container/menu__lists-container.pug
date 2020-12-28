@@ -5,5 +5,8 @@ mixin menu__lists-container(modifier)
     //- массив списков будет набит болванками, чтобы скрипт не ломался
     while modifier.listsArr.length < modifier.navigationArr.length
       - modifier.listsArr.push({})
-    each list in modifier.listsArr
-      +menu__list(list)
+    each list, index in modifier.listsArr
+      if index == 0
+        +menu__list(list)(class="menu__list_active" data-trigger=(index + 1))
+      else
+        +menu__list(list)(data-trigger=(index + 1))
