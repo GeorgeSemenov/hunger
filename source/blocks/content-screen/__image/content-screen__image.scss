@@ -1,13 +1,13 @@
 .content-screen__image {
-  @include square(475px);
+  @include square($image-width-desktop);
   position: relative;
   padding-left: 25px;
 
   @media (max-width: $xl - 1px) {
-    @include square(300px);
+    @include square($image-width-tablet);
   }
   @media (max-width: $sm - 1px) {
-    @include square(190px);
+    @include square($image-width-mobile);
   }
 
   &:after{

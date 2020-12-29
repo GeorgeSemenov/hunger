@@ -1,0 +1,5 @@
+mixin content-screen__image-and-descritption(modifier)
+  .content-screen__image-and-descritption&attributes(attributes)
+    +content-screen__image(modifier)
+    if modifier._imgDesc != undefined
+      +content-screen__image-description-container(modifier)  

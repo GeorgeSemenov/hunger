@@ -5,18 +5,26 @@
   color: $content-screen__image-description-text--color;
   transform:rotate(90deg);
   position: absolute;
-  top: 76px;
-  left: -19px;
+  transform-origin: top left;
+  width: $image-width-desktop;
+  left: 49px;
+  top: 30px;
+  @media (max-width: $xl - 1px){
+    height: $image-width-tablet;
+  }
+  @media (max-width: $sm - 1px){
+    width: $image-width-mobile;
+  }
 }
 
 .content-screen_image-position_both-sides{
   .content-screen__content-box + .content-screen__content-box{
     .content-screen__image-description-text{
-      right: -80px;
+      right: auto;
       transform: rotate(-90deg);
-      bottom: 136px;
+      bottom: 7px;
       top: auto;
-      left: auto;
+      left: 30px;
       font-size: 3.2rem;
 
       @media (max-width: $md - 1px) {

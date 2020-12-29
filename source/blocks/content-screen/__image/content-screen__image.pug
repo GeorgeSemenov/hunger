@@ -27,5 +27,3 @@ mixin content-screen__image(modifier)
         img(src=require("../../img/rings.png") alt="lord of the rings").content-screen__img&attributes(attributes)
       default
         p "where is no image with such name"
-    if modifier._imgDesc != undefined
-      +content-screen__image-description-container(modifier)
