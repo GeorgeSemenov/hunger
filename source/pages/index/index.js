@@ -5,6 +5,5 @@ import '../../blocks/main-screen/main-screen.js';
 import '../../blocks/preloader/preloader.js';
 import '../../blocks/sending-form/sending-form.js';
 import '../../blocks/carousel/carousel.js';
-import '../../blocks/list-item/list-item.js';
 import '../../blocks/menu/menu.js';
 import '../../blocks/picture-line/picture-line.js';
