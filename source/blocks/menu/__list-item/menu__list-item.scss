@@ -1,12 +1,18 @@
+$margin-bottom: 36px;
 .menu__list-item {
-  width: 355px;
+  width: 360px;
   font-family: 'banny' ,times , serif;
   font-size: 1.8rem;
   text-transform: uppercase;
   color: $menu__listItem--color;
   font-weight: bold;
   white-space: nowrap;
+  margin-bottom: $margin-bottom;
+  @media (max-width: $md - 1px) {
+    width: 320px;
+  }
+
   @media (max-width: $sm - 1px) {
-    width: 300px;
+    margin-bottom: 15px;
   }
 }

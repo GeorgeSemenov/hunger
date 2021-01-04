@@ -2,9 +2,8 @@ include __carousel/picture-line__carousel.pug
 include __content/picture-line__content.pug
 include __img-box/picture-line__img-box.pug
 mixin picture-line(modifier)
-  .picture-line&attributes(attributes)
+  .picture-line&attributes(attributes).swiper-container
     if modifier.length == 0
       - modifier = ['mazzo','briches','tables','chair']
-    +picture-line__content(modifier)(class="picture-line_invisible_small-width")
 
     +picture-line__carousel(modifier)

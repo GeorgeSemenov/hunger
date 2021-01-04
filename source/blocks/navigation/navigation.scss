@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
-  z-index: 1;
+  z-index: 2;
 
   &.navigation_desktop-theme_dark {
     background-color: $navigation_desktop-theme_dark--BGColor;

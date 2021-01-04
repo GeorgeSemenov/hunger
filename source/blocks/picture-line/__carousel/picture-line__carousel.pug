@@ -1,5 +1,4 @@
 mixin picture-line__carousel(modifier)
-  .picture-line__carousel&attributes(attributes)
-    .swiper-wrapper  
-      each pic in modifier
-        +picture-line__img-box(pic)
+  .picture-line__carousel&attributes(attributes).swiper-wrapper
+    each pic in modifier
+      +picture-line__img-box(pic)
