@@ -1,7 +1,15 @@
+include __contacts/sending-form__contacts.pug
+include __textArea/sending-form__textArea.pug
+include __bottom/sending-form__bottom.pug
 include __input-field/sending-form__input-field.pug
 include __input-fields-container/sending-form__input-fields-container.pug
 include ../link/link.pug
+include ../contact/contact.pug
 mixin sending-form(modifier)
   form.sending-form&attributes(attributes)
-    +sending-form__input-fields-container(modifier)
-    +link({text: modifier.buttonText})(class="sending-form__submit-button link_theme_button")
+    each contact in contacts
+      span!=contact.text
+    //- +sending-form__input-fields-container(modifier)
+    //- if modifier.textArea != undefined
+    //-   +sending-form__textArea(modifier)
+    //- +sending-form__bottom(modifier)

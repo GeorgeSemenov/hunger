@@ -4,5 +4,8 @@ include ../sending-form/sending-form.pug
 include __header-container/sending-screen__header-container.pug
 mixin sending-screen(modifier)
   .sending-screen&attributes(attributes)
+    //- span!=modifier.contacts.length
+    //- each contact in modifier.contacts
+      span!=contact
     +sending-screen__header-container(modifier)
-    +sending-form(modifier)(class="sending-screen__sendging-form sendging-form_theme_big")
+    +sending-form(modifier.contacts)
