@@ -1,1 +1,6 @@
-.sending-form__bottom {}
+.sending-form__bottom {
+  display: flex;
+  &>*{
+    width: 50%;
+  }
+}
