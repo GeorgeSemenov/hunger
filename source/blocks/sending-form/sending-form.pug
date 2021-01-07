@@ -7,9 +7,7 @@ include ../link/link.pug
 include ../contact/contact.pug
 mixin sending-form(modifier)
   form.sending-form&attributes(attributes)
-    each contact in contacts
-      span!=contact.text
-    //- +sending-form__input-fields-container(modifier)
-    //- if modifier.textArea != undefined
-    //-   +sending-form__textArea(modifier)
-    //- +sending-form__bottom(modifier)
+    +sending-form__input-fields-container(modifier)
+    if modifier.textArea != undefined
+      +sending-form__textArea(modifier)
+    +sending-form__bottom(modifier)
