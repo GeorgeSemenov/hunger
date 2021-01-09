@@ -63,6 +63,8 @@ $content-screen__annotation--color: $white;
 
 $sendingForm__inputField--BGColor:$gray-without-opacity;
 $sendingForm__inputField--color: $gray-light;
+$sendingForm__textArea--color: $sendingForm__inputField--color;
+$sendingForm__textArea--BGColor: $sendingForm__inputField--BGColor;
 
 $carousel__dots--BGColor: $gray;
 $carousel__dots-active--BGColor: $white;
@@ -70,3 +72,5 @@ $carousel__dots-active--BGColor: $white;
 $menu__listItem--color: $black;
 $menu__listItemDot--BGColor: $black;
 $menu__listItemDescription--color: $gray-darker;
+
+$contact__text--color: $gray-light;

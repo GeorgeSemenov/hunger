@@ -11,3 +11,6 @@ mixin sending-form(modifier)
     if modifier.textArea != undefined
       +sending-form__textArea(modifier)
     +sending-form__bottom(modifier)
+
+    //- Этот блок принимает следующие переменные:
+      //- modifier.inputFields=[{placeholder:str, class:str. opt-options:[str,str...]}, ...]
