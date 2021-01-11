@@ -4,9 +4,12 @@
   justify-content: start;
   min-height: 50px;
   align-items: center;
+  order: 1;
 
-  @media (max-width: $sm - 1px) {
+  @media (max-width: $lg - 1px) {
     width: 100%;
     justify-content: space-around;
+    flex-direction: column;
+    order: 2;
   }
 }

@@ -8,9 +8,11 @@ include ../contact/contact.pug
 mixin sending-form(modifier)
   form.sending-form&attributes(attributes)
     +sending-form__input-fields-container(modifier)
-    if modifier.textArea != undefined
+    if modifier.textAreaPlaceholder != undefined
       +sending-form__textArea(modifier)
     +sending-form__bottom(modifier)
 
     //- Этот блок принимает следующие переменные:
       //- modifier.inputFields=[{placeholder:str, class:str. opt-options:[str,str...]}, ...]
+      //- modifier.textAreaPlaceholder = str
+      //- modifier.buttonText = str

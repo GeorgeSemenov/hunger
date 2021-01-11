@@ -4,8 +4,11 @@
 
 .sending-form__contacts + .sending-form__submit-button{
   width: 50%;
+  order: 2;
 
-  @media (max-width: $sm - 1px) {
+  @media (max-width: $lg - 1px) {
+    margin-bottom: 10px;
     width: 100%;
+    order: 1;
   }
 }
