@@ -10,6 +10,7 @@ include ../../blocks/carousel/carousel.pug
 include ../../blocks/menu-screen/menu-screen.pug
 include ../../blocks/picture-line/picture-line.pug
 include ../../blocks/sending-screen/sending-screen.pug
+include ../../blocks/map-screen/map-screen.pug
 doctype html
 html(lang="ru")
   head
@@ -144,3 +145,4 @@ html(lang="ru")
       contacts: [{img: 'location', text: "5th London Boulevard, U.K."}, {img: 'phone', text: "+40 729 131 637/+40 726 458 782"}, {img: 'mail', text: "office@mindblister.com"}],
       inputFields: [{placeholder:'Name', class:""},{placeholder:'Email', class:""},{placeholder:'Phone', class:""}]
     })
+    +map-screen({})
