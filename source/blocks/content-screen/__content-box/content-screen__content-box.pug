@@ -4,6 +4,6 @@ mixin content-screen__content-box(modifier)
       if modifier._imgDesc != undefined
         +content-screen__image-and-descritption(modifier)
       else
-        +content-screen__image(modifier)
+        +content-screen__image-wrapper(modifier)
     else
       +content-screen__content(modifier)

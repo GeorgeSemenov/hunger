@@ -1,6 +1,7 @@
 $image-width-desktop: 475px;
 $image-width-tablet: 300px;
 $image-width-mobile: 190px;
+@import '__image-wrapper/content-screen__image-wrapper';
 @import '__image-and-descritption/content-screen__image-and-descritption';
 @import '__annotation/content-screen__annotation';
 @import '__image-description-container/content-screen__image-description-container';
