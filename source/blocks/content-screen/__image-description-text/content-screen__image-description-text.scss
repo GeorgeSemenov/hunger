@@ -10,10 +10,13 @@
   left: 49px;
   top: 30px;
   @media (max-width: $xl - 1px){
-    height: $image-width-tablet;
+    width: $image-width-tablet;
+    top: auto;
+    text-align: center;
   }
   @media (max-width: $sm - 1px){
     width: $image-width-mobile;
+    font-size: 2.4rem;
   }
 }
 
@@ -29,8 +32,9 @@
 
       @media (max-width: $md - 1px) {
         right: -40px;
-        bottom: 85px;
+        //bottom: 85px;
         font-size: 2.2rem;
+        top: 100%;
       }
     }
   }

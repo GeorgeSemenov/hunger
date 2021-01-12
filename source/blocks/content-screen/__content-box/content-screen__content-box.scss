@@ -95,7 +95,11 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding-right: 40px;
-    @media (max-width: $lg - 1px){padding-right: 0px;}
+    padding-left: 40px;
+    @media (max-width: $lg - 1px){
+      padding-right: 0px;
+      padding-left: 0px;
+    }
     @media (max-width: $md - 1px) { justify-content: center;}
   }
   .content-screen__content-box + .content-screen__content-box{
