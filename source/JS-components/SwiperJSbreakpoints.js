@@ -1,27 +1,26 @@
 import Swiper from '../vendor/swiperJS/swiper-bundle.js';
-function SwiperJSBreackpoints(brObj){
-  console.log("i'm running");
-  if (boObj == undefined)
-    {boObj = {};}
+export let SwiperJSBreackpoints = function(brObj){
+  if (brObj == undefined)
+    {brObj = {};}
 
-  if (boObj.desWidth == undefined)
-    {boObj.desWidth = '(min-width:1440px)';}
-  if (boObj.carouselName == undefined)
-    {boObj.carouselName = '.picture-line';}
-  if (boObj.spvMobile == undefined)
-    {boObj.spvMobile = 1;}
-  if (boObj.sbMobile == undefined)
-    {boObj.sbMobile = 0;}
-  if (boObj.spvTablet == undefined)
-    {boObj.spvTablet = 2;}
-  if (boObj.sbTablet == undefined)
-    {boObj.sbTablet = 10;}
-  if (boObj.spvDesktop == undefined)
-    {boObj.spvDesktop = 3;}
-  if (boObj.sbDesktop == undefined)
-    {boObj.sbDesktop = 0;}
+  if (brObj.desWidth == undefined)
+    {brObj.desWidth = '(min-width:1440px)';}
+  if (brObj.carouselName == undefined)
+    {brObj.carouselName = '.picture-line';}
+  if (brObj.spvMobile == undefined)
+    {brObj.spvMobile = 1;}
+  if (brObj.sbMobile == undefined)
+    {brObj.sbMobile = 0;}
+  if (brObj.spvTablet == undefined)
+    {brObj.spvTablet = 2;}
+  if (brObj.sbTablet == undefined)
+    {brObj.sbTablet = 10;}
+  if (brObj.spvDesktop == undefined)
+    {brObj.spvDesktop = 3;}
+  if (brObj.sbDesktop == undefined)
+    {brObj.sbDesktop = 0;}
 
-  var breakpoint = window.matchMedia(modifier.desWidth);
+  var breakpoint = window.matchMedia(brObj.desWidth);
   var swiper;
 
   var breakpointChecker = function(){
@@ -35,17 +34,17 @@ function SwiperJSBreackpoints(brObj){
   };
 
   var enableSwiper = function () {
-      swiper = new Swiper(boObj.carouselName, {
-      slidesPerView: boObj.spvMobile,
-      spaceBetween: boObj.sbMobile,
+      swiper = new Swiper(brObj.carouselName, {
+      slidesPerView: brObj.spvMobile,
+      spaceBetween: brObj.sbMobile,
       breakpoints:{
         510:{
-          slidesPerView: boObj.spvTablet,
-          spaceBetween: boObj.sbTablet,
+          slidesPerView: brObj.spvTablet,
+          spaceBetween: brObj.sbTablet,
         },
         1100:{
-          slidesPerView: boObj.spvDesktop,
-          spaceBetween: boObj.sbDesktop,
+          slidesPerView: brObj.spvDesktop,
+          spaceBetween: brObj.sbDesktop,
         }
       }
     });
@@ -54,5 +53,3 @@ function SwiperJSBreackpoints(brObj){
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
 }
-
-export default  SwiperJSBreackpoints; // список экспортируемых переменных

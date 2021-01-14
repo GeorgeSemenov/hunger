@@ -11,6 +11,6 @@ include __tab-text/menu__tab-text.pug
 include __tab-container/menu__tab-container.pug
 include __navigation/menu__navigation.pug
 mixin menu(modifier)
-  .menu&attributes(attributes)
+  .menu.swiper-container&attributes(attributes)
     +menu__navigation(modifier)
     +menu__lists-container(modifier)
