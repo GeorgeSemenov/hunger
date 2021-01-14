@@ -19,6 +19,12 @@ export let SwiperJSBreackpoints = function(brObj){
     {brObj.spvDesktop = 3;}
   if (brObj.sbDesktop == undefined)
     {brObj.sbDesktop = 0;}
+  if (brObj.navRight == undefined)
+    {brObj.navRight = ".picture-line__arrow_right";}
+  if (brObj.navLeft == undefined)
+    {brObj.navLeft = ".picture-line__arrow_left";}
+
+  console.log(`brObj.desWidth= ${brObj.desWidth}\ncarouselName= ${brObj.carouselName}`)
 
   var breakpoint = window.matchMedia(brObj.desWidth);
   var swiper;
@@ -37,6 +43,10 @@ export let SwiperJSBreackpoints = function(brObj){
       swiper = new Swiper(brObj.carouselName, {
       slidesPerView: brObj.spvMobile,
       spaceBetween: brObj.sbMobile,
+      navigation: {
+        nextEl: brObj.navRight,
+        prevEl: brObj.navLeft,
+      },
       breakpoints:{
         510:{
           slidesPerView: brObj.spvTablet,
