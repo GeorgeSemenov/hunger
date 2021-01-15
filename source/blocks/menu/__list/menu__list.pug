@@ -2,7 +2,7 @@ mixin menu__list(list)
   .menu__list&attributes(attributes)
     if list.length!= undefined
       each item in list
-        +menu__list-item(item)(class="menu__list-item")
+        +menu__list-item(item)
     else
       - var i= 0
       while i < 21 

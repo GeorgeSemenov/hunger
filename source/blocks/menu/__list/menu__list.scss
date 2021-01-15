@@ -14,4 +14,7 @@
   @media (max-width: $md - 1px) {
     grid-template-columns: repeat(1, 320px);
   }
+  @media (max-width: $sm - 1px){
+    grid-template-columns: repeat(1, 300px);
+  }
 }

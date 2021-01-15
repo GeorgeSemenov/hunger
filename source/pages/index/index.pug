@@ -11,6 +11,7 @@ include ../../blocks/menu-screen/menu-screen.pug
 include ../../blocks/picture-line/picture-line.pug
 include ../../blocks/sending-screen/sending-screen.pug
 include ../../blocks/map-screen/map-screen.pug
+include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
   head
@@ -146,3 +147,4 @@ html(lang="ru")
       inputFields: [{placeholder:'Name', class:""},{placeholder:'Email', class:""},{placeholder:'Phone', class:""}]
     })
     +map-screen({})
+    +footer({})

@@ -20,7 +20,7 @@
     display: block;
 
     @media (max-width: $xl - 1px) {
-      @include square(120px);
+      @include square(90px);
       border-width: 14px;
     }
     @media (max-width: $sm - 1px) {
@@ -35,6 +35,9 @@
     &:after {
       right:0;
       transform: translate(50%, -50%);
+      @media (max-width: $xl - 1px){
+        transform: translate(40%, -50%);
+      }
     }
   }
 }
