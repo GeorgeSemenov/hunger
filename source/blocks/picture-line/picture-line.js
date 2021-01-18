@@ -4,7 +4,7 @@
 // });
 import Swiper from '../../vendor/swiperJS/swiper-bundle.js';
 $(document).ready(function(){
-  swiper = new Swiper('.picture-line', {
+  let swiper = new Swiper('.picture-line', {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {
