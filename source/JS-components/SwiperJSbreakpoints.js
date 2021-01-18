@@ -30,8 +30,10 @@ export let SwiperJSBreackpoints = function(brObj){
   var swiper;
 
   var breakpointChecker = function(){
+    console.log(`begining script swiper = ${swiper}`)
     if (breakpoint.matches === true) {
       if (swiper !== undefined) {
+        console.log(`before destroing = ${swiper}`)
         return swiper.destroy();
       }
     } else if (breakpoint.matches === false) {
@@ -40,6 +42,7 @@ export let SwiperJSBreackpoints = function(brObj){
   };
 
   var enableSwiper = function () {
+      console.log(`before creating = ${swiper}`)
       swiper = new Swiper(brObj.carouselName, {
       slidesPerView: brObj.spvMobile,
       spaceBetween: brObj.sbMobile,

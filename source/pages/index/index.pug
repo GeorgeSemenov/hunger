@@ -25,20 +25,20 @@ html(lang="ru")
     })(class="")
     +main-screen({
     	annotation: {text: "Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM"}
-    })
+    })(id="home")
     +content-screen({
       headerText: "about us",
       textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
       text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
       imgName: "fire&coals"
-    })(class="content-screen_image-position_right" id="second-screen")
+    })(class="content-screen_image-position_right" id="about")
     +content-screen({
     	banner: "our team",
       headerText: "master chief",
       textHighlighted: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.",
       text: "Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.",
       imgName: "masterChief"
-    })(class="content-screen_with-lines content-screen_theme_our-team content-screen_image-position_left content-screen_theme_dark")
+    })(class="content-screen_with-lines content-screen_theme_our-team content-screen_image-position_left content-screen_theme_dark" id="team")
     +content-screen({
       headerText: "book a table",
       imgName: "clocks",
@@ -51,7 +51,7 @@ html(lang="ru")
         text_regular3 : "Phone: ",
         text_highlighted3 : "+40 729 131 637/+40 726 458 782 ",
       }
-    })(class="content-screen_image-position_right content-screen_theme_booking content-screen_with-sending-form")
+    })(class="content-screen_image-position_right content-screen_theme_booking content-screen_with-sending-form" id="booking")
     +carousel([
     {
       value:{
@@ -124,7 +124,7 @@ html(lang="ru")
           }
         ]
       ]
-    })
+    })(id="menu")
     +content-screen({
       banner: "private events",
       imgName: "rings",
@@ -136,8 +136,8 @@ html(lang="ru")
           text_highlighted2 : "+40 729 131 637/+40 726 458 782 ",
           text_regular3 : "or use the contact form.",
         }
-    })(class="content-screen_image-position_both-sides content-screen_theme_private-events content-screen_theme_dark")
-    +picture-line([])
+    })(class="content-screen_image-position_both-sides content-screen_theme_private-events content-screen_theme_dark" id="events")
+    +picture-line([])(id="galerie")
     +sending-screen({
       header: "contact",
       headerDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna",
@@ -145,6 +145,6 @@ html(lang="ru")
       buttonText: "SEND MESSAGE",
       contacts: [{img: 'location', text: "5th London Boulevard, U.K."}, {img: 'phone', text: "+40 729 131 637/+40 726 458 782"}, {img: 'mail', text: "office@mindblister.com"}],
       inputFields: [{placeholder:'Name', class:""},{placeholder:'Email', class:""},{placeholder:'Phone', class:""}]
-    })
+    })(id="contact")
     +map-screen({})
     +footer({})
