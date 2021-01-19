@@ -9,6 +9,7 @@
 3)Может Лиза знает про какой-нибудь инструмент кэширования
   сборки pug на webpack, а то компилятор каждый раз пересобирает 
   проект, работать становится тяжело.
+  Или может поможет настроить cache-loader
 4)Вроде разобрался с функцией для swiper, однако по какой-то причине destroy
   не срабатывает, и объект swiper остаётся, только перестаёт работать, 
   выводит одну картинку на экран,
@@ -30,6 +31,20 @@
   теперь с этим проектом делать? Над чем мне порабоать? Скорость 
   загрузки, оптимизация может какая-то нужна?
   Или могу сразу переходить к следующей работе?
+7)Скачал несколько шаблонов, может Лиза посмотрит, и скажет, за какой
+  лучше браться.
+  Лэндинги:
+  https://www.uistore.design/items/recruitment-agency-free-landing-page-for-sketch/
+  https://www.uistore.design/items/vpn-free-landing-page-for-figma/
+  https://www.uistore.design/items/food-app-landing-page-for-figma/
+  https://www.uistore.design/items/mntn-free-landing-page-for-figma/
+  
+  Многостанишные
+  https://dribbble.com/shots/11355365-Free-Figma-File-Social-Websites
+  https://dribbble.com/shots/10873993-Freebie-Creative-Mind-Exploration
+  https://dribbble.com/shots/7650052-Freebies-Web-for-Smart-Home-Installation-Agency
+  https://dribbble.com/shots/6694058-HM001-Arita-2016-Free-Download-After-Effects-Sketch-Figma
+
 /*--------------------------------------Занятие 30-------------------------------------------------------------------------------------------------*/
 1)Не могу никак разобраться - почему появляется блок высотой в 11px 
   в тэге picture на скрине private events, откуда он берётся и 

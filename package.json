@@ -13,6 +13,7 @@
   "author": "George Semenov",
   "license": "ISC",
   "devDependencies": {
+    "cache-loader": "^4.1.0",
     "css-loader": "2.1.1",
     "file-loader": "3.0.1",
     "html-webpack-plugin": "^4.0.0",
