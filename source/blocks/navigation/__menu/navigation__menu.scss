@@ -28,12 +28,20 @@
     width: auto;
     overflow: hidden;
 
+    @media (orientation: landscape){
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100vh;
+    }
+
     .navigation__sandwich-input:checked ~ .navigation__menu{
       max-height: none;
     }
 
-    @media (max-height: 400px) {
-        padding-top: 0px;
-    }
+    // @media (max-height: 400px) {
+    //     padding-top: 0px;
+    // }
   }
 }

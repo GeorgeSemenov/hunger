@@ -24,16 +24,12 @@ export let SwiperJSBreackpoints = function(brObj){
   if (brObj.navLeft == undefined)
     {brObj.navLeft = ".picture-line__arrow_left";}
 
-  console.log(`brObj.desWidth= ${brObj.desWidth}\ncarouselName= ${brObj.carouselName}`)
-
   var breakpoint = window.matchMedia(brObj.desWidth);
   var swiper;
 
   var breakpointChecker = function(){
-    console.log(`begining script swiper = ${swiper}`)
     if (breakpoint.matches === true) {
       if (swiper !== undefined) {
-        console.log(`before destroing = ${swiper}`)
         return swiper.destroy();
       }
     } else if (breakpoint.matches === false) {
@@ -42,7 +38,6 @@ export let SwiperJSBreackpoints = function(brObj){
   };
 
   var enableSwiper = function () {
-      console.log(`before creating = ${swiper}`)
       swiper = new Swiper(brObj.carouselName, {
       slidesPerView: brObj.spvMobile,
       spaceBetween: brObj.sbMobile,
@@ -50,6 +45,7 @@ export let SwiperJSBreackpoints = function(brObj){
         nextEl: brObj.navRight,
         prevEl: brObj.navLeft,
       },
+      autoplay: ((brObj.delay == undefined) ? undefined : {delay: brObj.delay,disableOnInteraction: false}),
       breakpoints:{
         510:{
           slidesPerView: brObj.spvTablet,
