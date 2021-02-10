@@ -9,6 +9,7 @@ const css = require('./webpack/css');//Модуль для обработки ф
 const extractCss = require('./webpack/css.extract');//Модуль для извлечения стилей в отдельный(ые) файл(ы) и дальнейшего подключения к проекту
 const images = require('./webpack/images');//Модуль, который обрабатывает изображения
 const fonts = require('./webpack/fonts');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const PATHS = {//Объект с двумя свойствами
 	source: path.join(__dirname, 'source'),
@@ -23,10 +24,11 @@ const common= merge([//модуль merge -  заменяет метод assign 
 		},
 		output: {
 			path: PATHS.build,//Устанавливаем путь, куда мы будем пихать наши обработанные файлы
-			publicPath: '/',//Устанавливаем путь, куда будет смотреть node сервер(да и наверное остальные) в данном случае он будет смотреть в localhost:8080(или другой порт это не важно)  и если ты указал изображение в images он будет смотреть в localhost:8080/images/menu.png а не в css/images/menu.png т.к. menu.png цепляется через menu.scss который складируется в css/ поэтому путь будет относительно css но public path это меняет чтобы webpack смотрел в корень сервера
+			//publicPath: '/',//Устанавливаем путь, куда будет смотреть node сервер(да и наверное остальные) в данном случае он будет смотреть в localhost:8080(или другой порт это не важно)  и если ты указал изображение в images он будет смотреть в localhost:8080/images/menu.png а не в css/images/menu.png т.к. menu.png цепляется через menu.scss который складируется в css/ поэтому путь будет относительно css но public path это меняет чтобы webpack смотрел в корень сервера
 			filename: 'js/[name].js'//[name]  - плэйхолдер, в него будут автоматически подставляться имена точек входа
 		},
 		plugins:[
+			new CleanWebpackPlugin(),
 			new HtmlWebpackPlugin({// создаём страничку html
 				filename:'index.html',//Задаём имя генерируемому файлу
 				chunks: ['index', 'common'],//Добавляет на страницу только те файлы, которые начинаются с index (допустим index.js index.css даже несмотря на то что они находятся в отельных папках css/ и js/)
@@ -35,7 +37,7 @@ const common= merge([//модуль merge -  заменяет метод assign 
 			new webpack.ProvidePlugin({//Этот плагин позволяет отказаться от import в модулях с кодом, т.е. когда webpack будет смотреть в код и найдёт допустим $ он автоматически подключит jquery, в соотвествии с настройками которые ты установишь в этом модуле
 				$: 'jquery',//Если будет найден $ он автоматически подключит jquery, jquery должен быть установленн npm i jquery т.е. можно не писать в коде import jquery
 				jQuery: 'jquery'
-			})
+			}),
 		],
 		optimization:{
 			splitChunks:{

@@ -12,7 +12,10 @@ mixin navigation(modifier)
   .navigation&attributes(attributes)
     if modifier.items == undefined
         - modifier.items = ['someValue','another','value'];
+    //-__ico-container - это бутерброд
+       __ico-container - label для __sandwich-input
+       когда назимают на ico-conainer нажимается и __sandwich-input
+       и добавляются новые стили прописанные в __content
     +navigation__sandwich-input(modifier)
-    //-ico-container - это бутерброд
     +navigation__sandwich-ico-container(modifier)
     +navigation__content(modifier)()
