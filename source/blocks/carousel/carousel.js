@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  console.log('hello');
   $('.carousel').slick({
     slidesToShow: 1,
     dots:true,
@@ -9,4 +10,5 @@ $(document).ready(function(){
     infinite: true,
     adaptiveHeight: true
   });
+  $('.slick-arrow').css({'display': 'none'});
 })
